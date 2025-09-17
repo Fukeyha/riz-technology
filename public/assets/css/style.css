@@ -1,0 +1,45 @@
+.btn-outline-light-custom{
+    font-family: 'Rubik';
+  display: inline-block;
+  background: transparent;
+  color: #fff;
+  padding: 12px 36px;
+  border-radius: 999px; /* Makes it pill-shaped */
+  text-decoration: none;
+  font-size: 22.67px;
+  border: 2px solid #fff;
+}
+.home_banner {
+    position: relative;
+    background: #000;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    z-index: 0; /* Lower than content, higher than ::after */
+    overflow: hidden;
+}
+
+.why_us .container{
+    border-radius: 50px;
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    color: white;
+    /* position: absolute;
+    bottom: -804px;
+    top: 14px; 
+    left: 355px;
+    z-index:3; */
+    
+}
+.custom-card {
+  border: 2px solid #fff;   /* White outline */
+  background: transparent;  /* No background */
+  border-radius: 10px;      /* Rounded corners */
+  color: #fff;              /* White text (works if dark bg) */
+  transition: 0.3s ease;
+}
+
+.custom-card:hover {
+  background: rgba(255, 255, 255, 0.05); /* subtle hover effect */
+  transform: translateY(-5px);
+}
