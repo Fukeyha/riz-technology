@@ -17,124 +17,53 @@
      src: url('/assets/fonts/korolev Bold.otf') format('opentype');;
      font-display: swap;
  }
-
-
- * {
+* {
      margin: 0;
      padding: 0;
      box-sizing: border-box;
      scroll-behavior: smooth;
  }
-
-
- html {
+html {
      overflow-x: hidden !important;
  }
-
- textarea {
+textarea {
      resize: none;
  }
-
- :root {
+:root {
      --primary: gray;
      --primary-light: white;
-     --base-color: #222C4E;
-     --font-display: "Baloo",
-         sans-serif;
-     --font-body: "Open",
-         sans-serif;
+     --base-color:#7711f4;
+     --baseColor2:  #a048c0;
+     --font-body: "Rubik";
  }
-
- .text-primary {
+.text-primary {
      color: var(--primary) !important;
- }
-
- .text-base {
+}
+.text-base {
      color: var(--base-color);
- }
-
- .text-primary-light {
+}
+.text-primary-light {
      color: var(--primary);
+}
+.font-k-l{
+     font-family: "korolev light";
+}
+.font-r {
+     font-family: "Rubik";
+}
+.font-k-b{
+     font-family: "korolev bold" ;
  }
-
- .font-b {
-     font-family: "korolev light",
-         sans-serif;
- }
-
- .font-g {
-     font-family: "Grapik",
-         sans-serif;
- }
-
- .font-s {
-     font-family: "Open",
-         sans-serif;
- }
-
- body {
+body {
      font-family: var(--font-body);
-     font-weight: 400;
      line-height: 30px;
-     font-size: 16px;
+     font-size: 16pt;
      overflow-wrap: break-word;
      -webkit-font-smoothing: antialiased;
-     
- }
-
- a {
-
-     text-decoration: none;
- }
-p{
-    font-family: 'Rubik';
-    font-size: 16pt;
-    
 }
- .btn {
-     display: inline-block;
-     color: white;
-     background: black;
-     padding: 12px 32px;
-     border-radius: 999px;
-     position: relative;
-     z-index: 1;
-     overflow: hidden;
-     transition: var(--easeInTransition);
- }
-
- .btn::before {
-     content: '';
-     position: absolute;
-     top: 0;
-     left: -100%;
-     width: 100%;
-     height: 100%;
-     background: linear-gradient(to right, #8e2de2, #4a00e0);
-     z-index: -1;
-     transition: var(--easeInTransition);
- }
-
- .btn:hover::before {
-     left: 0;
- }
-
- .btn:hover {
-     color: black;
- }
-
-.dark {
-     color: white;
-     background: white;
- }
-
- .dark::before {
-     background: linear-gradient(to right, #8e2de2, #4a00e0);
- }
-
- .dark:hover {
-     color: black;
- }
+a {
+  text-decoration: none;
+}
 
 
  .customContainer,
@@ -146,18 +75,16 @@ p{
      margin-left: auto;
      transition: var(--easeInTransition);
  }
-
-
-  .font1{
+.font1{
      font-family: 'korolev light';
      color: white;
      font-size: 100px;
  }
-   .font2{
+.font2{
      font-family: 'korolev bold';
      color: white;
         font-size: 100px;
- }
+    }
 
  h2 {
      font-size: 60pt;
@@ -169,91 +96,26 @@ p{
  h3 {
     font-size: 30pt;
      font-family: 'korolev light';
-color: white;
      word-wrap: normal;
  }
 
  h4 {
-     font-size: clamp(1.2rem, 2vw, 1.2rem);
-     font-family: 'Baloo';
-     font-weight: 600;
+        font-size: 30pt;
+        font-family: 'korolev bold';
  } 
-.nav-link{
-    font-family: 'Rubik';
-    font-size: 22.67px;
-}
-.main-btn {
-    font-family: 'Rubik';
-  display: inline-block;
-  background: linear-gradient(90deg, #6a11cb, #b24592); /* Purple → Pink */
-  color: #fff;
-  padding: 12px 36px;
-  border-radius: 999px; /* Makes it pill-shaped */
-  text-decoration: none;
-  font-size:  22.67px;
- 
-}
-.btn-outline-light-custom{
-    font-family: 'Rubik';
-  display: inline-block;
-  background: transparent;
-  color: #fff;
-  padding: 12px 36px;
-  border-radius: 999px; /* Makes it pill-shaped */
-  text-decoration: none;
-  font-size: 22.67px;
-  border: 2px solid #fff;
-}
-.home_banner {
-    position: relative;
-    background: #000;
-    height: 100vh;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    z-index: 0; /* Lower than content, higher than ::after */
-    overflow: hidden;
-}
-.home_banner::before {
-    content: "";
-    position: absolute;
-    top: -50px;
-      left: -3px;
-    width: 1068px;
-    height: 633px;
-    background: radial-gradient(circle at top left, rgba(180, 0, 255, 0.4), transparent 70%);
-    z-index: 1;
-}
 
-.why_us .container{
-    border-radius: 50px;
-    background: linear-gradient(to right, #8e2de2, #4a00e0);
-    color: white;
-    /* position: absolute;
-    bottom: -804px;
-    top: 14px; 
-    left: 355px;
-    z-index:3; */
-    
+ h5{
+        font-size: 30pt;
+ }
+.text-purple{
+    color: #730CF9;
 }
-.custom-card {
-  border: 2px solid #fff;   /* White outline */
-  background: transparent;  /* No background */
-  border-radius: 10px;      /* Rounded corners */
-  color: #fff;              /* White text (works if dark bg) */
-  transition: 0.3s ease;
+.bg-gray{
+    background-color: #F8F8F8;
 }
-
-.custom-card:hover {
-  background: rgba(255, 255, 255, 0.05); /* subtle hover effect */
-  transform: translateY(-5px);
-}
-.main-bg-img{
-    z-index: -1;
-    position: absolute;
-    top: 69px;
-}
-
+/* .bg-gradient{
+  background: linear-gradient(90deg, #6a11cb, #b24592);
+} */
 
  @media (min-width: 320px) {
 

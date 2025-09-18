@@ -1,45 +1,269 @@
-.btn-outline-light-custom{
-    font-family: 'Rubik';
+.nav-link {
+  color: gray;
+  transition: all 0.3s ease;
+  /* smooth transition */
+}
+
+.nav-link:hover {
+  background: linear-gradient(90deg, #6a11cb, #b24592);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main-btn {
+  display: inline-block;
+  background: linear-gradient(90deg, #6a11cb, #b24592);
+  /* Purple → Pink */
+  color: #fff;
+  padding: 12px 36px;
+  border-radius: 999px;
+  text-decoration: none;
+}
+
+.main-btn:hover {
+  background: linear-gradient(90deg, #7711f4, #a048c0);
+  /* Pink → Purple on hover */
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-outline-light-custom {
   display: inline-block;
   background: transparent;
   color: #fff;
   padding: 12px 36px;
-  border-radius: 999px; /* Makes it pill-shaped */
+  border-radius: 999px;
+  /* Makes it pill-shaped */
   text-decoration: none;
-  font-size: 22.67px;
   border: 2px solid #fff;
 }
+
+/* hero section */
 .home_banner {
-    position: relative;
-    background: #000;
-    height: 100vh;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    z-index: 0; /* Lower than content, higher than ::after */
-    overflow: hidden;
+  position: relative;
+  background: #000;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  z-index: 0;
+  /* Lower than content, higher than ::after */
+  overflow: hidden;
 }
 
-.why_us .container{
-    border-radius: 50px;
-    background: linear-gradient(to right, #8e2de2, #4a00e0);
-    color: white;
-    /* position: absolute;
-    bottom: -804px;
-    top: 14px; 
-    left: 355px;
-    z-index:3; */
-    
+.home_banner::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: -3px;
+  width: 1068px;
+  height: 856px;
+  background: radial-gradient(circle at top left, rgba(180, 0, 255, 0.4), transparent 70%);
+  z-index: 1;
 }
-.custom-card {
-  border: 2px solid #fff;   /* White outline */
-  background: transparent;  /* No background */
-  border-radius: 10px;      /* Rounded corners */
-  color: #fff;              /* White text (works if dark bg) */
+
+.home_banner h1::before {
+  content: '';
+  position: absolute;
+  top: 224px;
+  left: 446px;
+  background: url('/assets/img/home-icon.png');
+  width: 85px;
+  height: 85px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.main-bg-img {
+  z-index: -1;
+  position: absolute;
+  top: 69px;
+}
+
+/* why section */
+.why_us {
+  position: relative;
+  z-index: 10;
+  /* above the banner */
+  margin-top: -150px;
+  /* control spacing normally */
+}
+
+.why_us .container {
+  border-radius: 50px;
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
+  color: white;
+  padding: 40px;
+}
+
+.why_us .card {
+  position: relative;
+  border: 2px solid #fff;
+  background: transparent;
+  border-radius: 10px;
+  max-width: 320px;
+  color: #fff;
   transition: 0.3s ease;
 }
 
-.custom-card:hover {
-  background: rgba(255, 255, 255, 0.05); /* subtle hover effect */
+.why_us .card h3 {
+  color: #fff;
+  /* white before hover */
+  transition: color 0.3s ease;
+}
+
+.why_us .card img {
+  filter: brightness(0) invert(1);
+  /* make icons white by default */
+  transition: all 0.4s ease;
+}
+
+.why_us .card:hover {
   transform: translateY(-5px);
+  background-color: white;
+  color: black;
+}
+
+.why_us .card:hover h3 {
+  background: linear-gradient(90deg, #7711f4, #a048c0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* gradient text */
+}
+
+.why_us .card img {
+  filter: brightness(0) invert(1);
+  /* white before hover */
+  transition: all 0.4s ease;
+}
+
+.why_us .card:hover img {
+  filter: none;
+  /* remove white filter */
+  background: linear-gradient(90deg, #7711f4, #a048c0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.why_us .card-image:hover {
+  filter: none;
+  /* remove white filter */
+  background: linear-gradient(90deg, #7711f4, #a048c0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card-volume {
+  position: absolute;
+  top: 32px;
+  left: -30%;
+  z-index: 999;
+}
+
+.bg-card::after {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 327px;
+  background: url('/assets/img/why-icon.png');
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.about_section .aboutImage img {
+  /* adjust as needed */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.about_section .aboutImage::after,
+.serviceSlider>.row::after {
+  content: '';
+  position: absolute;
+  top: -57px;
+  right: -27px;
+  background: url(/assets/img/about-logo.png);
+  width: 175px;
+  height: 161px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: spin 8s linear infinite;
+}
+
+.about_section {
+  background: url('/assets/img/about-bg.png') no-repeat center center;
+  background-size: cover;
+ background-repeat: no-repeat
+}
+.vertical-line {
+       position: absolute;
+    top: 0px;
+    left: 315px;
+    margin-left: 11px;
+    width: 2px;
+    height: 120px;
+   background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%,   /* fully transparent at top */
+    rgba(255, 255, 255, 0.5) 20%, /* faded in */
+    rgba(255, 255, 255, 0.5) 80%, /* solid middle */
+    rgba(255, 255, 255, 0) 100%  /* faded out at bottom */
+  );
+}
+
+.services_section .card {
+    border: 3px solid transparent;
+    border-radius: 10px;
+    background: linear-gradient(white, white) padding-box, linear-gradient(to right, #7711f4 0%, #a048c0 60%, #7711f4 100%) border-box;
+    padding: 125px 0px 15px;
+}
+.services_section .card-img-top{
+      position: absolute;
+    background-color: rgb(255 253 253);
+    top: -183px;
+    /* bottom: 28px; */
+    left: 18px;
+    z-index: 3;
+    width: 91%;
+    height: 214px;
+}
+
+.services_section .card-body {
+      padding: 140px 15px 40px;
+    margin: -100px 13px 0px;
+    border-radius: 13px;
+    padding-top: 145px !important;
+}
+.services_section .card-body:hover{
+   background: linear-gradient(90deg, #7711f4, #a048c0);
+   color: white;
+   & a{
+    color: white;
+   }
+}
+.services_section a{
+  background: linear-gradient(90deg, #7711f4, #a048c0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* for modern browsers */
+  text-decoration: none; /* optional, removes underline */
+  font-weight: 600;      /* optional, makes it pop */
+}
+
+.services_section .card h4 {
+  font-size: 1.5rem;
+}
+
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
