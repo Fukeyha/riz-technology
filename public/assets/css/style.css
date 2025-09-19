@@ -114,9 +114,15 @@
 
 .why_us .card img {
   filter: brightness(0) invert(1);
-  /* make icons white by default */
+  /* white by default */
   transition: all 0.4s ease;
 }
+
+.why_us .card:hover img {
+  filter: brightness(0) invert(0);
+  /* black on hover */
+}
+
 
 .why_us .card:hover {
   transform: translateY(-5px);
@@ -135,22 +141,6 @@
   filter: brightness(0) invert(1);
   /* white before hover */
   transition: all 0.4s ease;
-}
-
-.why_us .card:hover img {
-  filter: none;
-  /* remove white filter */
-  background: linear-gradient(90deg, #7711f4, #a048c0);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.why_us .card-image:hover {
-  filter: none;
-  /* remove white filter */
-  background: linear-gradient(90deg, #7711f4, #a048c0);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .card-volume {
@@ -196,67 +186,473 @@
 .about_section {
   background: url('/assets/img/about-bg.png') no-repeat center center;
   background-size: cover;
- background-repeat: no-repeat
+  background-repeat: no-repeat
 }
+
 .vertical-line {
-       position: absolute;
-    top: 0px;
-    left: 315px;
-    margin-left: 11px;
-    width: 2px;
-    height: 120px;
-   background: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0) 0%,   /* fully transparent at top */
-    rgba(255, 255, 255, 0.5) 20%, /* faded in */
-    rgba(255, 255, 255, 0.5) 80%, /* solid middle */
-    rgba(255, 255, 255, 0) 100%  /* faded out at bottom */
-  );
+  position: absolute;
+  top: 0px;
+  left: 315px;
+  margin-left: 11px;
+  width: 2px;
+  height: 120px;
+  background: linear-gradient(to bottom,
+      rgba(255, 255, 255, 0) 0%,
+      /* fully transparent at top */
+      rgba(255, 255, 255, 0.5) 20%,
+      /* faded in */
+      rgba(255, 255, 255, 0.5) 80%,
+      /* solid middle */
+      rgba(255, 255, 255, 0) 100%
+      /* faded out at bottom */
+    );
 }
 
 .services_section .card {
-    border: 3px solid transparent;
-    border-radius: 10px;
-    background: linear-gradient(white, white) padding-box, linear-gradient(to right, #7711f4 0%, #a048c0 60%, #7711f4 100%) border-box;
-    padding: 125px 0px 15px;
+  border: 3px solid transparent;
+  border-radius: 10px;
+  background: linear-gradient(white, white) padding-box, linear-gradient(to right, #7711f4 0%, #a048c0 60%, #7711f4 100%) border-box;
+  padding: 109px 0px 15px;
+  margin: 56px 40px;
+
 }
-.services_section .card-img-top{
-      position: absolute;
-    background-color: rgb(255 253 253);
-    top: -183px;
-    /* bottom: 28px; */
-    left: 18px;
-    z-index: 3;
-    width: 91%;
-    height: 214px;
+
+.services_section .card-img-top {
+  position: absolute;
+  background-color: rgb(255 253 253);
+  top: -142px;
+  /* bottom: 28px; */
+  left: 18px;
+  z-index: 9;
+  width: 91%;
+  height: 214px;
 }
 
 .services_section .card-body {
-      padding: 140px 15px 40px;
-    margin: -100px 13px 0px;
-    border-radius: 13px;
-    padding-top: 145px !important;
+  margin: -100px 13px 0px;
+  border-radius: 13px;
+  padding-top: 194px !important;
 }
-.services_section .card-body:hover{
-   background: linear-gradient(90deg, #7711f4, #a048c0);
-   color: white;
-   & a{
+
+.services_section .card-body:hover {
+  background: linear-gradient(90deg, #7711f4, #a048c0);
+  color: white;
+
+  & a {
     color: white;
-   }
+  }
 }
-.services_section a{
+
+.services_section a {
   background: linear-gradient(90deg, #7711f4, #a048c0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text; /* for modern browsers */
-  text-decoration: none; /* optional, removes underline */
-  font-weight: 600;      /* optional, makes it pop */
+  background-clip: text;
+  /* for modern browsers */
+  text-decoration: none;
+  /* optional, removes underline */
+  font-weight: 600;
+  /* optional, makes it pop */
 }
 
 .services_section .card h4 {
   font-size: 1.5rem;
 }
 
+.services_section {
+  background-image: url('/assets/img/wave-bg.png');
+  background-position: center 514px;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+
+
+
+.process_section>.card {
+  padding: 60px 50px 90px;
+  border: 0;
+  background: linear-gradient(90deg, #7711f4, #a048c0);
+  border-radius: 40px;
+  z-index: 3;
+}
+
+.separator {
+  position: absolute;
+  top: 61px;
+  left: 291px;
+  margin-left: 11px;
+  width: 2px;
+  height: 120px;
+  background: linear-gradient(to bottom,
+      rgba(255, 255, 255, 0) 0%,
+      /* fully transparent at top */
+      rgba(255, 255, 255, 0.5) 20%,
+      /* faded in */
+      rgba(255, 255, 255, 0.5) 80%,
+      /* solid middle */
+      rgba(255, 255, 255, 0) 100%
+      /* faded out at bottom */
+    );
+}
+
+.process_section .wave-row {
+  position: relative;
+  margin-top: 50px;
+  padding-top: 50px;
+}
+
+.process_section .wave-row::before {
+  content: '';
+  position: absolute;
+  top: -132px;
+  left: 25px;
+  width: 67%;
+  height: 100%;
+  background-image: url('/assets/img/waveShape.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.7);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(0.7);
+    opacity: 1;
+  }
+}
+
+
+.wave-row .col-md-4 .process_number::before {
+  content: '';
+  position: absolute;
+  top: -19px;
+  left: 17px;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff80;
+  border-radius: 50%;
+  animation: scaleUp 5s infinite ease;
+}
+
+.wave-row .col-md-4 .process_number::after {
+  content: '';
+  position: absolute;
+  top: -14px;
+  left: 22px;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.wave-row .col-md-4:nth-child(2) .process_number::before {
+  top: 21px;
+  left: 11px;
+}
+
+.wave-row .col-md-4:nth-child(2) .process_number::after {
+  top: 26px;
+  left: 16px;
+}
+
+.wave-row .col-md-4:nth-child(3) .process_number::before {
+  top: 2px;
+  left: 17px;
+}
+
+.wave-row .col-md-4:nth-child(3) .process_number::after {
+  top: 7px;
+  left: 22px;
+}
+
+.partner_section {
+  position: relative;
+  padding: 190px 0px 165px;
+  background-image: url('/assets/img/partner-bg.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #eaddfd;
+}
+
+.partner_section::before {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  background-image: url(/assets/img/wave-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 115%;
+  height: 354px;
+  opacity: 0.5;
+}
+
+.partner_word {
+  position: relative;
+  top: 0px;
+  width: 400px;
+  height: 400px;
+  left: 0px;
+}
+
+.partner_column img:nth-child(1) {
+  position: absolute;
+  right: -69px;
+  top: -63px;
+  animation-delay: 2s;
+}
+
+.partner_column img:nth-child(2) {
+  position: absolute;
+  right: 101px;
+  top: 42px;
+  animation-delay: 2s;
+}
+
+.partner_column img:nth-child(3) {
+  position: absolute;
+  right: 119px;
+  top: 191px;
+  animation-delay: 2s;
+}
+
+.partner_column img:nth-child(4) {
+  position: absolute;
+  right: -28px;
+  top: 312px;
+  animation-delay: 2s;
+}
+
+.partner4 {
+  position: absolute;
+  left: -111px;
+  top: -83px;
+  animation-delay: 2s;
+}
+
+.partner5 {
+  position: absolute;
+  left: 75px;
+  top: 10px;
+  animation-delay: 2s;
+}
+
+.partner_img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 10px;
+}
+
+.partner6 {
+  position: absolute;
+  left: 114px;
+  bottom: 74px;
+  animation-delay: 2s;
+  width: 127px;
+  height: 117px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 8px;
+}
+
+.partner12 {
+  position: absolute;
+  left: -22px;
+  bottom: -3px;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 20px;
+}
+
+.partner_word::before {
+  content: '';
+  position: absolute;
+  top: -9px;
+  left: 172px;
+  background-image: url('/assets/img/process-logo.png');
+  width: 400px;
+  height: 400px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.partner_word::after {
+  content: '';
+  position: absolute;
+  top: 19px;
+  left: 211px;
+  background-image: url('/assets/img/partner-logo-text.png');
+  width: 320px;
+  height: 320px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: spin 8s linear infinite;
+  z-index: 2;
+}
+
+/* Your existing team section styles */
+.team_section .col-lg-4 {
+  padding-top: 200px;
+}
+
+.team_section .row .col-lg-4>.team_container {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  height: 800px;
+  overflow: visible;
+}
+
+.team_section .row .col-lg-4>.team_container>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* fills the container */
+  object-position: top;
+  /* keeps faces visible */
+}
+
+.team_section .row .col-lg-4 .team_member_info_container {
+  top: -11%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.team_member_info_container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  z-index: 5;
+  left: 0px;
+}
+
+.team-member-info {
+  display: flex;
+  justify-content: space-between;
+  width: 430px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(90deg, #7711f4, #a048c0) border-box;
+  border-radius: 5px;
+  padding: 15px;
+  gap: 20px;
+}
+
+.team_section .social-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.team_section .row .col-lg-4:hover img {
+  filter: grayscale(0);
+  transition: all 0.3s ease-in;
+}
+
+.team_section .social-icons a {
+  color: #7711f4;
+  border: 2px solid #7711f4;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.team_section .social-icons a:hover {
+  background: #7711f4;
+  color: white;
+}
+
+
+.social-icons a {
+  display: inline-block;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  box-sizing: border-box;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  position: relative;
+}
+
+.social-icons a i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #7711f4;
+}
+
+.team_section .social-icons a:hover i {
+  color: white;  
+}
+
+.ceo_section .about_image {
+  padding: 15px 0px 0px 0px !important;
+  border-radius: 5px;
+  margin-right: 65px;
+  position: relative;
+  border: 4px solid transparent;
+  border-radius: 8px;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(90deg, #7711f4, #a048c0) border-box;
+}
+
+.ceo_section .about_image::before {
+  content: '';
+  position: absolute;
+  top: -133px;
+  left: 482px;
+  background-image: url(/assets/img/process-logo.png);
+  width: 389px;
+  height: 303px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.ceo_section .about_image::after {
+  content: '';
+  position: absolute;
+  top: -113px;
+  left: 511px;
+  background-image: url(/assets/img/partner-logo-text.png);
+  width: 246px;
+  height: 246px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: spin 8s linear infinite;
+  z-index: 2;
+}
 
 @keyframes spin {
   from {

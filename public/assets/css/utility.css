@@ -113,9 +113,12 @@ a {
 .bg-gray{
     background-color: #F8F8F8;
 }
-/* .bg-gradient{
-  background: linear-gradient(90deg, #6a11cb, #b24592);
-} */
+.fs-4{
+    font-size: 33pt;
+    font-family: 'korolev bold';
+    color: white;
+}
+
 
  @media (min-width: 320px) {
 
@@ -149,16 +152,11 @@ a {
      }
  }
 
- @media (min-width: 1200px) {
-
-     .customContainer {
-         max-width: 1170px;
-     }
-
-     .customContainer3 {
-         max-width: 1580px;
-     }
- }
+@media (min-width: 1200px) {
+    .customContainer {
+        max-width: 1170px;
+    }
+}
 
  @media (max-width: 1600px) {
 

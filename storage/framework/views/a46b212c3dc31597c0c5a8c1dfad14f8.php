@@ -12,6 +12,15 @@
     <link rel="stylesheet" href="./assets/css/utility.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoE3H6CkzJr59p2y1C5V0pX1Lr9e4p6+Xo4S+A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -245,7 +254,7 @@
                         <div class="col-12 text-center mt-5 pt-3">
                             <h2 class="text-dark">Our <span class="font-k-b">Services</span></h2>
                         </div>
-                        <div class="row justify-content-center mt-5 pt-5">
+                        <div class="row justify-content-center mt-5 pt-5 slider">
                             <div class="col-lg-4">
                                 <div class="card px-0 mx-2 h-100">
                                     <div class="card-inner bg-white">
@@ -271,10 +280,10 @@
                                                 class="card-img-top px-4 shadow-lg rounded-3">
                                         </div>
                                         <div class="card-body p-3">
-                                            <h4>IT Consulting & Advisory</h4>
-                                            <p>The right technology, implemented properly, appropriately managed and
-                                                monitored, can lead to significant
-                                                gains in growth</p>
+                                            <h4>Managed Services</h4>
+                                            <p>Free up your internal resources to focus on the business by letting us
+                                                handle day to day support services, management, and monitoring of your
+                                                IT.</p>
                                             <a href="#">Read More</a>
                                         </div>
                                     </div>
@@ -288,29 +297,254 @@
                                                 class="card-img-top px-4 shadow-lg rounded-3">
                                         </div>
                                         <div class="card-body p-3">
-                                            <h4>Cyber Security</h4>
-                                            <p>Our experts can identify vulnerabilities, assess risks, and implement
+                                            <h4 class="px-3">Cyber Security</h4>
+                                            <p class="px-3">Our experts can identify vulnerabilities, assess risks,
+                                                and implement
                                                 robust
                                                 security measures to safeguard your systems and data.</p>
-                                            <a href="#">Read More</a>
+                                            <a class="px-3" href="#">Read More</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="d-flex justify-content-center pt-5 ">
-                                    <button class="btn main-btn">View All</button>
+                            <div class="col-lg-4">
+                                <div class="card px-0 mx-2 h-100">
+                                    <div class="card-inner bg-white">
+                                        <div class="position-relative text-center">
+                                            <img src="<?php echo e(asset('assets/img/services-img-3.png')); ?>" alt="Card image"
+                                                class="card-img-top px-4 shadow-lg rounded-3">
+                                        </div>
+                                        <div class="card-body p-3">
+                                            <h4 class="px-3">Cyber Security</h4>
+                                            <p class="px-3">Our experts can identify vulnerabilities, assess risks,
+                                                and implement
+                                                robust
+                                                security measures to safeguard your systems and data.</p>
+                                            <a class="px-3" href="#">Read More</a>
+                                        </div>
+                                    </div>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center pt-5 ">
+                            <button class="btn main-btn">View All</button>
+                        </div>
+                    </div>
+                </section>
+                <section class="process_section container position-relative">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row align-items-center text-white g-4 position-relative">
+                                <div class="col-md-3 text-start text-md-start">
+                                    <h2 class="text-white">Our <br> <span class="font-k-b">Process</span></h2>
+                                    <div class="separator"></div>
+                                </div>
+                                <div class="col-md-9 text-start text-md-start ps-4">
+                                    <p>Our process of providing solutions for IT Technologies is straightforward and
+                                        transparent. We start with a thorough analysis of your business needs and then
+                                        design a customized solution. We implement it with minimal disruption to your
+                                        operations and provide ongoing support and maintenance.</p>
+                                </div>
+                            </div>
+                            <div class="row wave-row">
+                                <div class="col-md-4 text-start text-md-start position-relative">
+                                    <span class="process_number fs-4"> 01 </span>
+                                    <h4 class="text-white">Analysis</h4>
+                                    <p class="text-white">We analyze data and trends to provide actionable
+                                        insights, optimize processes,
+                                        and uncover growth opportunities, driving business success and
+                                        innovation.</p>
+                                </div>
+                                <div class="col-md-4 text-start text-md-start pt-5 position-relative">
+                                    <span class="process_number fs-4 "> 02 </span>
+                                    <h4 class="text-white">Solution</h4>
+                                    <p class="text-white">We provide customized solutions to address your
+                                        unique business challenges as per your requirements, enhancing
+                                        efficiency, driving growth, and fostering innovation.</p>
+                                </div>
+                                <div class="col-md-4 text-start text-md-start pt-4 position-relative">
+                                    <span class="process_number fs-4 "> 03 </span>
+                                    <h4 class="text-white">Implement</h4>
+                                    <p class="text-white">We deliver seamless implementation of tailored
+                                        solutions, ensuring smooth integration, optimized systems, and
+                                        successful deployment for lasting impact.</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+                <section class="partner_section my-5">
+                    <div class=" text-center">
+                        <h2 class="text-dark">Our <span class="font-k-b">Partners</span></h2>
+                        <p class="px-5">Our credibility and professionalism are further enhanced by our reliable
+                            partnerships with several well-known brands and companies.</p>
+                    </div>
+                    <div class="row partner_bg mt-5 pt-5">
+                        <div class="col-lg-4 partner_column position-relative">
+                            <img src="https://riztechnology.com/assets/images/partner/partner-1.png "
+                                class="img-fluid partner_img" alt="partner">
+                            <img src="https://riztechnology.com/assets/images/partner/partner-2.png "
+                                class="img-fluid partner_img" alt="partner">
+                            <img src="https://riztechnology.com/assets/images/partner/partner-3.png "
+                                class="img-fluid partner_img" alt="partner">
+                            <img src="https://riztechnology.com/assets/images/partner/partner-4.png "
+                                class="img-fluid partner_img" alt="partner">
+
+                        </div>
+                        <div class="col-lg-4 position-relative">
+
+                            <div class="partner_word"></div>
+                        </div>
+                        <div class="col-lg-4 partner_column2 position-relative">
+                            <div class="partner4">
+                                <img src="https://riztechnology.com/assets/images/partner/partner-7.png "
+                                    class="img-fluid" alt="partner">
+                            </div>
+                            <div class="partner5">
+                                <img src="https://riztechnology.com/assets/images/partner/partner-8.png "
+                                    class="img-fluid partner_img" alt="partner">
+                            </div>
+                            <div class="partner6">
+                                <img src="https://riztechnology.com/assets/images/partner/partner-6.png "
+                                    class="img-fluid" alt="partner">
+                            </div>
+
+                            <div class="partner12">
+                                <img src="https://riztechnology.com/assets/images/partner/partner-12.jpeg "
+                                    class="img-fluid" alt="partner">
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </section>
+                <section class="ceo_section py-5 mt-5 position-relative">
+                    <div class="container">
+                        <div class="row g-5 pt-5">
+                            <div class="col-lg-7">
+                                <div class="about_image">
+                                    <img src="<?php echo e(asset('assets/img/ceo-img.png')); ?>" alt="Card image"
+                                        class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <h4 class="fs8 text-purple">CEO Message</h4>
+                                <p class="my-3 position-relative text-justify text-dark"><i
+                                        class="fa-solid fa-quote-left fs-2 text-purple"></i>
+
+                                    The successful transformation of our business portfolio is critical to our future
+                                    success. By
+                                    implementing strategic changes and enhancing our management resources, we will
+                                    diversify our profits
+                                    and create a business structure that supports sustainable growth. Let us embrace
+                                    this vision and
+                                    advance with&nbsp;confidence.
+                                    <i class="fa-solid fa-quote-right fs-2 text-purple position-absolute ms-1"></i>
+                                </p>
+                                <h3 class="mb-4 fw-bold text-dark"> Best Regards:</h3>
+                                <p class="ceoSignature mb-3">MuhammadRizwan</p>
+                                <h3 class="fs9 text-black fs-5 mt-2">Muhammad Rizwan</h3>
+                                <p class="mt-2 text-dark"> Founder &amp; Ceo</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="team_section py-5">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 text-center mt-5 pt-3">
+                                <h2 class="text-dark">Our <span class="font-k-b">Team</span></h2>
+                            </div>
+                        </div>
+                        <div class="row mt-5 pt-5">
+                            <div class="col-lg-4">
+                                <div class="team_container position-relative">
+                                    <img src="<?php echo e(asset('assets/img/team-member-5.png')); ?>" class="img-fluid"
+                                        alt="partner">
+                                    <div class="team_member_info_container revert">
+                                        <div class="team-member-info">
+                                            <div class="">
+                                                <h6 class="fs8 fw-bold text-purple">Muhammad Imran </h6>
+                                                <p>Co-Founder, Pakistan</p>
+                                            </div>
+                                            <div class="social-icons">
+                                                <a href="https://www.facebook.com/RizTechnology"><i class="ri-facebook-fill"></i></a>
+                                                <a href="https://twitter.com/MyCompanyTwitter"><i class="ri-twitter-x-line"></i></a>
+                                                <a href="https://www.instagram.com/riztechnology/"><i class="ri-instagram-line"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="team-member-info-arrow revert">
+                                             <img src="<?php echo e(asset('assets/img/team-arrow.png')); ?>" class="img-fluid"
+                                        >
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="team_container position-relative">
+                                    <img src="<?php echo e(asset('assets/img/team-member-2.png')); ?>" class="img-fluid"
+                                        alt="partner">
+                                        <div class="team_member_info_container revert">
+                                        <div class="team-member-info">
+                                            <div class="">
+                                                <h6 class="fs8 fw-bold text-purple">Nadia Abrar</h6>
+                                                <p>Country Manager, Dubai – United Arab Emirates</p>
+                                            </div>
+                                            <div class="social-icons">
+                                                <a href="https://www.facebook.com/RizTechnology"><i class="ri-facebook-fill"></i></a>
+                                                <a href="https://twitter.com/MyCompanyTwitter"><i class="ri-twitter-x-line"></i></a>
+                                                <a href="https://www.instagram.com/riztechnology/"><i class="ri-instagram-line"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="team-member-info-arrow revert">
+                                             <img src="<?php echo e(asset('assets/img/team-arrow.png')); ?>" class="img-fluid"
+                                        >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="team_container position-relative">
+                                    <img src="<?php echo e(asset('assets/img/team-member-4.png')); ?>" class="img-fluid"
+                                        alt="partner">
+                                        <div class="team_member_info_container revert">
+                                        <div class="team-member-info">
+                                            <div class="">
+                                                <h6 class="fs8 fw-bold text-purple">Ahmed Ali Jaffery</h6>
+                                                <p>Country Manager, London – United Kingdom</p>
+                                            </div>
+                                             <div class="social-icons">
+                                                <a href="https://www.facebook.com/RizTechnology"><i class="ri-facebook-fill"></i></a>
+                                                <a href="https://twitter.com/MyCompanyTwitter"><i class="ri-twitter-x-line"></i></a>
+                                                <a href="https://www.instagram.com/riztechnology/"><i class="ri-instagram-line"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="team-member-info-arrow revert">
+                                             <img src="<?php echo e(asset('assets/img/team-arrow.png')); ?>" class="img-fluid"
+                                        >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
 
                     </div>
                 </section>
-
 
             </main>
 
 
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
@@ -320,6 +554,28 @@
     <script src="./assets/js/ScrollTrigger.min.js"></script>
     <script src="./assets/js/smooth.min.js"></script>
     <script src="./assets/js/script.js"></script>
+    <script type="text/javascript">
+        $('.slider').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+            prevArrow: '<button class="slick-prev"><i class="bi bi-chevron-left"></i></button>',
+            nextArrow: '<button class="slick-next"><i class="bi bi-chevron-right"></i></button>',
+            responsive: [{
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    </script>
 
 </body>
 
