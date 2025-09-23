@@ -110,6 +110,7 @@
 
  h1 {
      font-size: 75pt;
+    
  }
 
  .font1 {
@@ -188,15 +189,11 @@
      margin-top: -31px;
  }
 
- @media only screen and (max-width: 1600px) and (min-width: 1301px) {
-     .location_section {
-         padding: 50px 0px;
-     }
- }
-
-
+/* 
  @media (min-width: 320px) {
-
+  h1 {
+    font-size: 37pt;
+}
      .customContainer {
          width: auto;
 
@@ -215,26 +212,17 @@
     text-decoration: none;
     border: 2px solid #fff;
 }
-
-     h1 {
-         font-size: 20pt;
-         color: white !important;
-         margin-top: -141px;
-     }
-
      .banner_text .font1 {
          position: relative;
          display: inline-block;
      }
 
      .banner_text .font1::before {
-         content: "";
-         position: absolute;
+
          top: -38px;
          left: -56px;
          width: 90px;
          height: 69px;
-         background: url(/assets/img/home-icon.png) center / contain no-repeat;
      }
 
      p {
@@ -250,19 +238,18 @@
  }
 
  @media (min-width: 576px) {
-
+ 
      .customContainer {
          max-width: 540px;
          overflow: hidden;
      }
        .banner_text .font1::before {
-    content: "";
-    position: absolute;
+
     top: -38px;
     left: -56px;
     width: 90px;
     height: 69px;
-    background: url(/assets/img/home-icon.png) center / contain no-repeat;
+
 }
 
  }
@@ -298,4 +285,4 @@
          height: 700px !important;
      }
 
- }
+ } */

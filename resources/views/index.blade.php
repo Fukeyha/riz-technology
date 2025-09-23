@@ -96,7 +96,7 @@
                                     business growth.</p>
 
 
-                                <div class="d-flex justify-content-center gap-4 pt-5">
+                                <div class=" d-flex flex-column flex-md-row justify-content-center gap-4 p-3">
                                     <a href="#" class="btn main-btn">Get Started</a>
                                     <a href="#" class="btn btn-outline-light-custom">Learn More</a>
                                 </div>
@@ -116,8 +116,8 @@
                         </div>
 
                         <!-- Cards Row -->
-                        <div class="row">
-                            <div class="col-lg-3">
+                        <div class="row why_section_slider">
+                            <div class="col-lg-3 col-md-6 col-sm-12">
                                 <div class="card">
                                     <div class="card-volumeIcon">
                                         <img src="{{ asset('assets/img/volume-shape.png') }}" alt="Card image"
@@ -150,7 +150,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3">
+                            <div class="col-lg-3 col-md-6 col-sm-12">
                                 <div class="card">
                                     <div class="card-volumeIcon highlight">
                                         <img src="{{ asset('assets/img/volume-shape.png') }}" alt="Card image"
@@ -179,7 +179,7 @@
                                             </path>
                                         </svg>
                                         <h4 class="py-3">Innovative <br> Technology</h4>
-                                        <p >We stay current with
+                                        <p>We stay current with
                                             market trends to ensure
                                             our products and systems remain innovative and
                                             efficient.
@@ -188,7 +188,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3">
+                            <div class="col-lg-3 col-md-6 col-sm-12">
                                 <div class="card">
                                     <div class="card-volumeIcon highlight">
                                         <img src="{{ asset('assets/img/volume-shape.png') }}" alt="Card image"
@@ -246,9 +246,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3">
+                            <div class="col-lg-3 col-md-6 col-sm-12">
                                 <div class="card">
-                                    
+
                                     <div class="card-body">
                                         <svg xmlns="http://www.w3.org/2000/svg"
                                             xmlns:xlink="http://www.w3.org/1999/xlink" fill="#fff" height="50"
@@ -290,35 +290,40 @@
                         </div>
                     </div>
                 </section>
-                <section class="stats_section py-4">
+                <section class="stats_section py-5">
                     <div class="container">
-                        <div class="row text-star my-3 mt-3 py-3">
-                            <div class="col-md-3 px-4 position-relative">
-                                <h4 class="font-k-b">25+ Years</h4>
-                                <p class="mb-0 text-uppercase fs-5">Proven Track Record</p>
-                                <div class="vertical-line"></div>
+                        <div class="row text-center g-4">
+                            <div class="col-6 col-md-3">
+                                <div class="stat-box">
+                                    <h4 class="font-k-b mb-1">25+ Years</h4>
+                                    <p class="mb-0 text-uppercase fs-5">Proven Track Record</p>
+                                </div>
                             </div>
 
-                            <div class="col-md-3 px-4 position-relative">
-                                <h4 class="font-k-b">99%</h4>
-                                <p class="mb-0 text-uppercase  fs-5">Customer Satisfaction</p>
-                                <div class="vertical-line"></div>
+                            <div class="col-6 col-md-3">
+                                <div class="stat-box">
+                                    <h4 class="font-k-b mb-1">99%</h4>
+                                    <p class="mb-0 text-uppercase fs-5">Customer Satisfaction</p>
+                                </div>
                             </div>
 
-                            <div class="col-md-3  ps-3 position-relative">
-                                <h4 class="font-k-b">3000+ Projects</h4>
-                                <p class="mb-0 text-uppercase  fs-5">We Have Completed</p>
-                                <div class="vertical-line"></div>
+                            <div class="col-6 col-md-3">
+                                <div class="stat-box">
+                                    <h4 class="font-k-b mb-1">3000+</h4>
+                                    <p class="mb-0 text-uppercase fs-5">Projects Completed</p>
+                                </div>
                             </div>
 
-                            <div class="col-md-3 ps-5 position-relative">
-                                <h4 class="font-k-b">3 Mins</h4>
-                                <p class="mb-0 text-uppercase  fs-5">Average Answer Time</p>
+                            <div class="col-6 col-md-3">
+                                <div class="stat-box">
+                                    <h4 class="font-k-b mb-1">3 Mins</h4>
+                                    <p class="mb-0 text-uppercase fs-5">Average Answer Time</p>
+                                </div>
                             </div>
-
                         </div>
                     </div>
                 </section>
+
 
                 <section class="services_section py-5">
                     <div class="container pt-5">
@@ -326,7 +331,7 @@
                             <h2 class="text-dark font-k-l">Our <span class="font-k-b">Services</span></h2>
                         </div>
                         <div class="row justify-content-center mt-5 pt-5 slider">
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 d-flex">
                                 <div class="card px-0 mx-2 h-100">
                                     <div class="card-inner bg-white">
                                         <div class="position-relative text-center">
@@ -343,7 +348,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 d-flex">
                                 <div class="card px-0 mx-2 h-100">
                                     <div class="card-inner bg-white">
                                         <div class="position-relative text-center">
@@ -360,7 +365,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 d-flex">
                                 <div class="card px-0 mx-2 h-100">
                                     <div class="card-inner bg-white">
                                         <div class="position-relative text-center">
@@ -378,7 +383,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 d-flex">
                                 <div class="card px-0 mx-2 h-100">
                                     <div class="card-inner bg-white">
                                         <div class="position-relative text-center">
@@ -447,7 +452,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="partner_section my-5">
+                <section class="partner_section my-5 partnerDesk">
                     <div class=" text-center">
                         <h2 class="text-dark font-k-l">Our <span class="font-k-b">Partners</span></h2>
                         <p class="px-5">Our credibility and professionalism are further enhanced by our reliable
@@ -467,7 +472,6 @@
 
                             </div>
                             <div class="col-lg-4 position-relative">
-
                                 <div class="partner_word"></div>
                             </div>
                             <div class="col-lg-4 partner_column2 position-relative">
@@ -495,6 +499,101 @@
                     </div>
 
                 </section>
+                     <section class="partner_section my-5 partnerDesk">
+                    <div class=" text-center">
+                        <h2 class="text-dark font-k-l">Our <span class="font-k-b">Partners</span></h2>
+                        <p class="px-5">Our credibility and professionalism are further enhanced by our reliable
+                            partnerships <br> with several well-known brands and companies.</p>
+                    </div>
+                    <div class="container">
+                        <div class="row partner_bg mt-5 pt-5">
+                            <div class="col-lg-4 partner_column position-relative">
+                                <img src="https://riztechnology.com/assets/images/partner/partner-1.png "
+                                    class="img-fluid partner_img" alt="partner">
+                                <img src="https://riztechnology.com/assets/images/partner/partner-2.png "
+                                    class="img-fluid partner_img" alt="partner">
+                                <img src="https://riztechnology.com/assets/images/partner/partner-3.png "
+                                    class="img-fluid partner_img" alt="partner">
+                                <img src="https://riztechnology.com/assets/images/partner/partner-4.png "
+                                    class="img-fluid partner_img" alt="partner">
+
+                            </div>
+                            <div class="col-lg-4 position-relative">
+                                <div class="partner_word"></div>
+                            </div>
+                            <div class="col-lg-4 partner_column2 position-relative">
+                                <div class="partner4">
+                                    <img src="https://riztechnology.com/assets/images/partner/partner-7.png "
+                                        class="img-fluid" alt="partner">
+                                </div>
+                                <div class="partner5">
+                                    <img src="https://riztechnology.com/assets/images/partner/partner-8.png "
+                                        class="img-fluid partner_img" alt="partner">
+                                </div>
+                                <div class="partner6">
+                                    <img src="https://riztechnology.com/assets/images/partner/partner-6.png "
+                                        class="img-fluid" alt="partner">
+                                </div>
+
+                                <div class="partner12">
+                                    <img src="https://riztechnology.com/assets/images/partner/partner-12.jpeg "
+                                        class="img-fluid" alt="partner">
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+                     <section class="partner_section my-5 partnerMob">
+                    <div class=" text-center">
+                        <h2 class="text-dark font-k-l">Our <span class="font-k-b">Partners</span></h2>
+                        <p class="px-5">Our credibility and professionalism are further enhanced by our reliable
+                            partnerships <br> with several well-known brands and companies.</p>
+                    </div>
+                    <div class="container">
+                        <div class="row partner_bg mt-5 pt-5">
+                            <div class="col-lg-4 partner_column position-relative">
+                                <img src="https://riztechnology.com/assets/images/partner/partner-1.png "
+                                    class="img-fluid partner_img" alt="partner">
+                                <img src="https://riztechnology.com/assets/images/partner/partner-2.png "
+                                    class="img-fluid partner_img" alt="partner">
+                                <img src="https://riztechnology.com/assets/images/partner/partner-3.png "
+                                    class="img-fluid partner_img" alt="partner">
+                                <img src="https://riztechnology.com/assets/images/partner/partner-4.png "
+                                    class="img-fluid partner_img" alt="partner">
+
+                            </div>
+                            <div class="col-lg-4 position-relative">
+                                <div class="partner_word"></div>
+                            </div>
+                            <div class="col-lg-4 partner_column2 position-relative">
+                                <div class="partner4">
+                                    <img src="https://riztechnology.com/assets/images/partner/partner-7.png "
+                                        class="img-fluid" alt="partner">
+                                </div>
+                                <div class="partner5">
+                                    <img src="https://riztechnology.com/assets/images/partner/partner-8.png "
+                                        class="img-fluid partner_img" alt="partner">
+                                </div>
+                                <div class="partner6">
+                                    <img src="https://riztechnology.com/assets/images/partner/partner-6.png "
+                                        class="img-fluid" alt="partner">
+                                </div>
+
+                                <div class="partner12">
+                                    <img src="https://riztechnology.com/assets/images/partner/partner-12.jpeg "
+                                        class="img-fluid" alt="partner">
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+               
                 <section class="ceo_section py-5 mt-5 position-relative">
                     <div class="container">
                         <div class="row g-5 pt-5">
@@ -531,7 +630,7 @@
                         <div class=" text-center">
                             <h2 class="text-dark font-k-l">Latest <span class="font-k-b">Blogs</span></h2>
                         </div>
-                        <div class="row justify-content-center align-items-center mt-5 pt-5 g-4">
+                        <div class="row justify-content-center align-items-center pt-3 mt-2 g-4">
                             <div class="col-lg-4">
                                 <div class="card px-0 mx-2 py-4">
                                     <div class="position-relative">
@@ -1235,7 +1334,7 @@
                                         Design &amp; Developed By Fossphorus </p>
 
                                 </div>
-                                <div class="col-lg-4 col-md-5 text-end px-0  text-white"><a
+                                <div class="col-lg-4 col-md-5 text-center text-md-end px-0  text-white"><a
                                         href="https://riztechnology.com/privacy-policy" class=" text-white">Privacy
                                         Policy</a> | <a href="https://riztechnology.com/terms-and-conditions"
                                         class=" text-white">Terms
@@ -1257,7 +1356,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
         integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        
+
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
@@ -1277,11 +1376,221 @@
             prevArrow: '<button type="button" class="slick-prev"></button>',
             nextArrow: '<button type="button" class="slick-next"></button>',
             responsive: [{
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1
+
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: false,
+                        arrow: false
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
                 }
-            }]
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+        $('.why_section_slider').slick({
+            dots: false,
+            infinite: true,
+            arrows: false,
+            speed: 500,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+
+            responsive: [{
+
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: false,
+                        arrow: false
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+        $('.process_slider').slick({
+            dots: false,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+
+            responsive: [{
+
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: false,
+                        arrow: false
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+        $(document).ready(function() {
+            var $items = $('.item');
+            var itemsId = $items.toArray();
+            var sectionDeg = 360 / itemsId.length;
+            var radianSectionDeg = (sectionDeg * Math.PI * 2) / 360;
+            var radiusLength = 170;
+
+            function updatePositions() {
+                $.each(itemsId, function(i, item) {
+                    var itemWidth = $(item).outerWidth();
+                    var itemHeight = $(item).outerHeight();
+                    $(item).css({
+                        top: radiusLength * Math.sin(radianSectionDeg * i - Math.PI / 2) -
+                            itemHeight / 2 + 'px',
+                        left: radiusLength * Math.cos(radianSectionDeg * i - Math.PI / 2) -
+                            itemWidth / 2 + 'px',
+                    });
+                });
+            }
+
+            updatePositions();
+
+            var rotation = 0;
+            var $center = $('#center');
+
+            function turnLeft() {
+                rotation += radianSectionDeg;
+                $center.css('transform', 'rotate(' + rotation + 'rad)');
+                $items.each(function() {
+                    $(this).css('transform', 'rotate(' + -rotation + 'rad)');
+                });
+            }
+
+            function turnRight() {
+                rotation -= radianSectionDeg;
+                $center.css('transform', 'rotate(' + rotation + 'rad)');
+                $items.each(function() {
+                    $(this).css('transform', 'rotate(' + -rotation + 'rad)');
+                });
+            }
+
+            $('.left').on('click', function() {
+                turnLeft();
+            });
+
+            $('.right').on('click', function() {
+                turnRight();
+            });
+
+            setInterval(function() {
+                turnRight();
+            }, 2000);
+
+            $(window).on('resize', updatePositions);
+        });
+
+        $(document).ready(function() {
+            function startCounterAnimation() {
+                $('.seperator h3, .glink h3,.glink p.review').each(function() {
+                    var $this = $(this);
+                    var text = $this.text();
+                    var countTo = parseInt(text, 10);
+
+                    if (!isNaN(countTo)) {
+                        var duration = text.includes('25 Years') ? 2000 : 3000;
+
+                        $({
+                            countNum: 0
+                        }).animate({
+                            countNum: countTo
+                        }, {
+                            duration: duration,
+                            easing: 'swing',
+                            step: function() {
+                                $this.text(
+                                    Math.floor(this.countNum) +
+                                    text.replace(/^\d+/, '')
+                                );
+                            },
+                            complete: function() {
+                                $this.text(this.countNum + text.replace(/^\d+/, ''));
+                            }
+                        });
+                    }
+                });
+            }
+
+            var observer = new IntersectionObserver(
+                function(entries) {
+                    entries.forEach(function(entry) {
+                        if (entry.isIntersecting) {
+                            startCounterAnimation();
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, {
+                    threshold: 0.5
+                }
+            );
+
+            var target = document.getElementById('counterSection');
+            observer.observe(target);
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentYear = new Date().getFullYear();
+            const copyrightElement = document.querySelector('#currentYear');
+
+            if (copyrightElement) {
+                copyrightElement.textContent = currentYear;
+            }
         });
     </script>
 
