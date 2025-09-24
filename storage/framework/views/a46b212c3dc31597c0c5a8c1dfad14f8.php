@@ -27,7 +27,8 @@
         integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 
 <body>
@@ -96,7 +97,7 @@
                                     business growth.</p>
 
 
-                                <div class=" d-flex flex-column flex-md-row justify-content-center gap-4 p-3">
+                                <div class=" flex-md-row justify-content-center gap-4 p-3">
                                     <a href="#" class="btn main-btn">Get Started</a>
                                     <a href="#" class="btn btn-outline-light-custom">Learn More</a>
                                 </div>
@@ -144,7 +145,7 @@
                                                 </path>
                                             </g>
                                         </svg>
-                                        <h4 class="py-3">Cost- <br>Effectiveness</h4>
+                                        <h4>Cost- <br>Effectiveness</h4>
                                         <p>Our diverse selection of products comes with budget-friendly solutions, all
                                             designed to enhance your business operations.</p>
                                     </div>
@@ -156,7 +157,7 @@
                                         <img src="<?php echo e(asset('assets/img/volume-shape.png')); ?>" alt="Card image"
                                             class="img-fluid">
                                     </div>
-                                    <div class="card-body">
+                                    <div class="card-body d-flex flex-column">
                                         <svg width="50" height="50" viewBox="0 0 512 512" fill="#fff"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -178,7 +179,7 @@
                                                 d="M273.53 511.991H233.356C213.688 511.991 197.687 495.989 197.687 476.32C197.687 473.559 199.924 471.321 202.686 471.321H304.201C306.964 471.321 309.201 473.559 309.201 476.322C309.201 495.989 293.2 511.991 273.53 511.991ZM208.176 481.321C210.509 493.09 220.913 501.991 233.357 501.991H273.531C285.975 501.991 296.381 493.09 298.714 481.321H208.176Z">
                                             </path>
                                         </svg>
-                                        <h4 class="py-3">Innovative <br> Technology</h4>
+                                        <h4>Innovative <br> Technology</h4>
                                         <p>We stay current with
                                             market trends to ensure
                                             our products and systems remain innovative and
@@ -239,7 +240,7 @@
                                                 d="M36.77148,10.4519l1.88086.68464a11.05087,11.05087,0,0,1,1.9043-3.33374L39.02148,6.51019A13.07675,13.07675,0,0,0,36.77148,10.4519Z">
                                             </path>
                                         </svg>
-                                        <h4 class="py-3">Industry <br>
+                                        <h4>Industry <br>
                                             Expertise</h4>
                                         <p>Our diverse selection of products comes with budget-friendly solutions, all
                                             designed to enhance your business operations.</p>
@@ -248,7 +249,10 @@
                             </div>
                             <div class="col-lg-3 col-md-6 col-sm-12">
                                 <div class="card">
-
+                                    <div class="card-volumeIcon highlight">
+                                        <img src="<?php echo e(asset('assets/img/volume-shape.png')); ?>" alt="Card image"
+                                            class="img-fluid">
+                                    </div>
                                     <div class="card-body">
                                         <svg xmlns="http://www.w3.org/2000/svg"
                                             xmlns:xlink="http://www.w3.org/1999/xlink" fill="#fff" height="50"
@@ -258,12 +262,13 @@
                                                 d="M30,3h-2H4H2C1.4,3,1,3.4,1,4s0.4,1,1,1h1v16c0,0.6,0.4,1,1,1h9.8l-5.5,6.3c-0.4,0.4-0.3,1,0.1,1.4C8.5,29.9,8.8,30,9,30  c0.3,0,0.6-0.1,0.8-0.3l5.2-6V28c0,0.6,0.4,1,1,1s1-0.4,1-1v-4.3l5.2,6c0.2,0.2,0.5,0.3,0.8,0.3c0.2,0,0.5-0.1,0.7-0.2  c0.4-0.4,0.5-1,0.1-1.4L18.2,22H28c0.6,0,1-0.4,1-1V5h1c0.6,0,1-0.4,1-1S30.6,3,30,3z M24.8,8.6l-4,6c-0.3,0.4-0.8,0.6-1.3,0.3  L15.8,13h-3.4l-3.7,3.7C8.5,16.9,8.3,17,8,17s-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4l4-4c0.2-0.2,0.4-0.3,0.7-0.3h4  c0.2,0,0.3,0,0.4,0.1l3.2,1.6l3.5-5.3c0.3-0.5,0.9-0.6,1.4-0.3C25,7.5,25.1,8.1,24.8,8.6z">
                                             </path>
                                         </svg>
-                                        <h4 class="py-3">Scalability</h4>
+                                        <h4 class="py-4">Scalability</h4>
                                         <p>Our diverse selection of products comes with budget-friendly solutions, all
                                             designed to enhance your business operations.</p>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </section>
@@ -331,8 +336,8 @@
                             <h2 class="text-dark font-k-l">Our <span class="font-k-b">Services</span></h2>
                         </div>
                         <div class="row justify-content-center mt-5 pt-5 slider">
-                            <div class="col-lg-4 d-flex">
-                                <div class="card px-0 mx-2 h-100">
+                            <div class="col-lg-4">
+                                <div class="card px-0 mx-2">
                                     <div class="card-inner bg-white">
                                         <div class="position-relative text-center">
                                             <img src="<?php echo e(asset('assets/img/services-img-1.png')); ?>" alt="Card image"
@@ -348,8 +353,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 d-flex">
-                                <div class="card px-0 mx-2 h-100">
+                            <div class="col-lg-4">
+                                <div class="card px-0 mx-2">
                                     <div class="card-inner bg-white">
                                         <div class="position-relative text-center">
                                             <img src="<?php echo e(asset('assets/img/services-img-2.png')); ?>" alt="Card image"
@@ -365,8 +370,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 d-flex">
-                                <div class="card px-0 mx-2 h-100">
+                            <div class="col-lg-4">
+                                <div class="card px-0 mx-2">
                                     <div class="card-inner bg-white">
                                         <div class="position-relative text-center">
                                             <img src="<?php echo e(asset('assets/img/services-img-3.png')); ?>" alt="Card image"
@@ -383,8 +388,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 d-flex">
-                                <div class="card px-0 mx-2 h-100">
+                            <div class="col-lg-4">
+                                <div class="card px-0 mx-2">
                                     <div class="card-inner bg-white">
                                         <div class="position-relative text-center">
                                             <img src="<?php echo e(asset('assets/img/services-img-3.png')); ?>" alt="Card image"
@@ -477,7 +482,7 @@
                             <div class="col-lg-4 partner_column2 position-relative">
                                 <div class="partner4">
                                     <img src="https://riztechnology.com/assets/images/partner/partner-7.png "
-                                        class="img-fluid" alt="partner">
+                                        class="img-fluid partner_img" alt="partner">
                                 </div>
                                 <div class="partner5">
                                     <img src="https://riztechnology.com/assets/images/partner/partner-8.png "
@@ -499,114 +504,67 @@
                     </div>
 
                 </section>
-                <section class="partner_section my-5 partnerDesk">
+
+                <section class="partner_section my-5 partnerMob">
                     <div class=" text-center">
                         <h2 class="text-dark font-k-l">Our <span class="font-k-b">Partners</span></h2>
                         <p class="px-5">Our credibility and professionalism are further enhanced by our reliable
                             partnerships <br> with several well-known brands and companies.</p>
                     </div>
-                    <div class="container">
-                        <div class="row partner_bg mt-5 pt-5">
-                            <div class="col-lg-4 partner_column position-relative">
-                                <img src="https://riztechnology.com/assets/images/partner/partner-1.png "
-                                    class="img-fluid partner_img" alt="partner">
-                                <img src="https://riztechnology.com/assets/images/partner/partner-2.png "
-                                    class="img-fluid partner_img" alt="partner">
-                                <img src="https://riztechnology.com/assets/images/partner/partner-3.png "
-                                    class="img-fluid partner_img" alt="partner">
-                                <img src="https://riztechnology.com/assets/images/partner/partner-4.png "
-                                    class="img-fluid partner_img" alt="partner">
-
+                    <div class="partnerDiv">
+                        <div class="partner_word">
+                        </div>
+                        <div id="center" class="wrapper">
+                            <div class="item">
+                                <div> <img src="https://riztechnology.com/assets/images/partner/partner-1.png "
+                                        class="img-fluid" alt="partner"></div>
                             </div>
-                            <div class="col-lg-4 position-relative">
-                                <div class="partner_word"></div>
-                            </div>
-                            <div class="col-lg-4 partner_column2 position-relative">
-                                <div class="partner4">
+                            <div class="item"> <img
+                                    src="https://riztechnology.com/assets/images/partner/partner-2.png "
+                                    class="img-fluid partner_img" alt="partner"></div>
+                            <div class="item"> <img
+                                    src="https://riztechnology.com/assets/images/partner/partner-3.png "
+                                    class="img-fluid partner_img" alt="partner"></div>
+                            <div class="item"> <img
+                                    src="https://riztechnology.com/assets/images/partner/partner-4.png "
+                                    class="img-fluid partner_img" alt="partner"></div>
+                            <div class="item">
+                                <div class="">
                                     <img src="https://riztechnology.com/assets/images/partner/partner-7.png "
                                         class="img-fluid" alt="partner">
                                 </div>
-                                <div class="partner5">
+                            </div>
+                            <div class="item">
+                                <div class="">
                                     <img src="https://riztechnology.com/assets/images/partner/partner-8.png "
                                         class="img-fluid partner_img" alt="partner">
                                 </div>
-                                <div class="partner6">
+                            </div>
+                            <div class="item">
+                                <div class="">
                                     <img src="https://riztechnology.com/assets/images/partner/partner-6.png "
                                         class="img-fluid" alt="partner">
                                 </div>
-
-                                <div class="partner12">
+                            </div>
+                            <div class="item">
+                                <div class="">
                                     <img src="https://riztechnology.com/assets/images/partner/partner-12.jpeg "
                                         class="img-fluid" alt="partner">
                                 </div>
+                            </div>
+                        </div>
 
-
+                        <div class="controls selection-off">
+                            <div class="left selection-off" onclick="turnLeft()"><i class="fas fa-caret-left"></i>
+                            </div>
+                            <div class="right selection-off" onclick="turnRight()"><i class="fas fa-caret-right"></i>
                             </div>
                         </div>
                     </div>
 
+
                 </section>
-                <section class="parnterSection my-5 partnerMob">
-                    <div class="customContainer text-center">
-                        <h1 class="fs3 text-black  wow animate__ animate__bounceInDown" data-wow-duration="1s"
-                            style="visibility: visible; animation-duration: 1s; animation-name: bounceInDown;">
-                            Authorized
-                            Commercial
-                            <span class="fs4 text-black">Partners</span>
-                        </h1>
-                        <p class="wow animate__ animate__bounceInDown mb-5" data-wow-duration="1s"
-                            data-wow-delay="0.5s"
-                            style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: bounceInDown;">
-                            We proudly collaborate with a diverse range of industry-leading companies. These
-                            partnerships allow us to
-                            enhance our offerings and deliver exceptional value to our clients. Together, we are
-                            committed to
-                            driving innovation and success.</p>
 
-
-                        <div class="partnerDiv">
-                            <div class="parnterWord"></div>
-                            <div id="center" class="wrapper" style="transform: rotate(-730.42rad);">
-                                <div class="item" style="top: -215px; left: -45px; transform: rotate(730.42rad);">
-                                    <img src="https://riztechnology.com/assets/images/partner/partner-1.png "
-                                        class="img-fluid" alt="partner"></div>
-                                <div class="item"
-                                    style="top: -165.208px; left: 75.2082px; transform: rotate(730.42rad);"><img
-                                        src="https://riztechnology.com/assets/images/partner/partner-2.png "
-                                        class="img-fluid" alt="partner"></div>
-                                <div class="item" style="top: -45px; left: 125px; transform: rotate(730.42rad);">
-                                    <img src="https://riztechnology.com/assets/images/partner/partner-3.png "
-                                        class="img-fluid" alt="partner"></div>
-                                <div class="item"
-                                    style="top: 75.2082px; left: 75.2082px; transform: rotate(730.42rad);"><img
-                                        src="https://riztechnology.com/assets/images/partner/partner-4.png "
-                                        class="img-fluid" alt="partner"></div>
-                                <div class="item" style="top: 125px; left: -45px; transform: rotate(730.42rad);">
-                                    <img src="https://riztechnology.com/assets/images/partner/partner-12.png "
-                                        class="img-fluid" alt="partner"></div>
-                                <div class="item"
-                                    style="top: 75.2082px; left: -165.208px; transform: rotate(730.42rad);"><img
-                                        src="https://riztechnology.com/assets/images/partner/partner-6.png "
-                                        class="img-fluid" alt="partner"></div>
-                                <div class="item" style="top: -45px; left: -215px; transform: rotate(730.42rad);">
-                                    <img src="https://riztechnology.com/assets/images/partner/logitech.png "
-                                        class="img-fluid" alt="partner"></div>
-                                <div class="item"
-                                    style="top: -165.208px; left: -165.208px; transform: rotate(730.42rad);"><img
-                                        src="https://riztechnology.com/assets/images/partner/partner-8.png "
-                                        class="img-fluid" alt="partner"></div>
-                            </div>
-
-                            <div class="controls selection-off">
-                                <div class="left selection-off" onclick="turnLeft()"><i
-                                        class="fas fa-caret-left"></i></div>
-                                <div class="right selection-off" onclick="turnRight()"><i
-                                        class="fas fa-caret-right"></i></div>
-                            </div>
-
-                        </div>
-                    </div>
-                </section>
 
                 <section class="ceo_section py-5 mt-5 position-relative">
                     <div class="container">
@@ -1382,43 +1340,54 @@
     <script src="./assets/js/script.js"></script>
     <script type="text/javascript">
         $('.slider').slick({
-            dots: false,
+            dots: false, // default (desktop)
             infinite: true,
             speed: 500,
             slidesToShow: 3,
             slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
             prevArrow: '<button type="button" class="slick-prev"></button>',
             nextArrow: '<button type="button" class="slick-next"></button>',
             responsive: [{
-
-                    breakpoint: 1024,
+                    breakpoint: 1366, // iPad Pro landscape max width
                     settings: {
-                        slidesToShow: 1,
+                        slidesToShow: 2,
                         slidesToScroll: 1,
-                        infinite: true,
-                        dots: false,
-                        arrow: false
+                        dots: true,
+                        arrows: false
+                    }
+                },
+                {
+                    breakpoint: 1024, // iPad Pro portrait / tablets
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        dots: true,
+                        arrows: false
                     }
                 },
                 {
                     breakpoint: 600,
                     settings: {
                         slidesToShow: 1,
-                        slidesToScroll: 1
+                        slidesToScroll: 1,
+                        dots: true, // ✅ enable dots
+                        arrows: false
                     }
                 },
                 {
                     breakpoint: 480,
                     settings: {
                         slidesToShow: 1,
-                        slidesToScroll: 1
+                        slidesToScroll: 1,
+                        dots: true, // ✅ enable dots
+                        arrows: false
                     }
                 }
-                // You can unslick at a given breakpoint now by adding:
-                // settings: "unslick"
-                // instead of a settings object
             ]
         });
+
         $('.why_section_slider').slick({
             dots: false,
             infinite: true,
@@ -1426,30 +1395,51 @@
             speed: 500,
             slidesToShow: 4,
             slidesToScroll: 1,
-
+            autoplay: true,
+            autoplaySpeed: 2000,
             responsive: [{
-
-                    breakpoint: 1024,
+                    breakpoint: 1366, // iPad Pro landscape max width
                     settings: {
-                        slidesToShow: 1,
+                        slidesToShow: 2,
                         slidesToScroll: 1,
-                        infinite: true,
-                        dots: false,
-                        arrow: false
+                        dots: true,
+                        arrows: false
+                    }
+                },
+                {
+                    breakpoint: 1024, // iPad Pro portrait / tablets
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        dots: true,
+                        arrows: false
                     }
                 },
                 {
                     breakpoint: 600,
                     settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        dots: true,
+                        arrows: false
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        dots: true,
+                        arrows: false
                     }
                 },
                 {
                     breakpoint: 480,
                     settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        dots: true,
+                        arrows: false
                     }
                 }
                 // You can unslick at a given breakpoint now by adding:
@@ -1503,8 +1493,8 @@
 
             function updatePositions() {
                 $.each(itemsId, function(i, item) {
-                    var itemWidth = $(item).outerWidth();
-                    var itemHeight = $(item).outerHeight();
+                    var itemWidth = $(item).outerWidth(); // Get dynamic width
+                    var itemHeight = $(item).outerHeight(); // Get dynamic height
                     $(item).css({
                         top: radiusLength * Math.sin(radianSectionDeg * i - Math.PI / 2) -
                             itemHeight / 2 + 'px',
@@ -1514,6 +1504,7 @@
                 });
             }
 
+            // Initial position setup
             updatePositions();
 
             var rotation = 0;
@@ -1543,68 +1534,13 @@
                 turnRight();
             });
 
+            // Auto-rotate every 2 seconds
             setInterval(function() {
                 turnRight();
             }, 2000);
 
+            // Recalculate positions on window resize to handle responsiveness
             $(window).on('resize', updatePositions);
-        });
-
-        $(document).ready(function() {
-            function startCounterAnimation() {
-                $('.seperator h3, .glink h3,.glink p.review').each(function() {
-                    var $this = $(this);
-                    var text = $this.text();
-                    var countTo = parseInt(text, 10);
-
-                    if (!isNaN(countTo)) {
-                        var duration = text.includes('25 Years') ? 2000 : 3000;
-
-                        $({
-                            countNum: 0
-                        }).animate({
-                            countNum: countTo
-                        }, {
-                            duration: duration,
-                            easing: 'swing',
-                            step: function() {
-                                $this.text(
-                                    Math.floor(this.countNum) +
-                                    text.replace(/^\d+/, '')
-                                );
-                            },
-                            complete: function() {
-                                $this.text(this.countNum + text.replace(/^\d+/, ''));
-                            }
-                        });
-                    }
-                });
-            }
-
-            var observer = new IntersectionObserver(
-                function(entries) {
-                    entries.forEach(function(entry) {
-                        if (entry.isIntersecting) {
-                            startCounterAnimation();
-                            observer.unobserve(entry.target);
-                        }
-                    });
-                }, {
-                    threshold: 0.5
-                }
-            );
-
-            var target = document.getElementById('counterSection');
-            observer.observe(target);
-        });
-
-        document.addEventListener('DOMContentLoaded', function() {
-            const currentYear = new Date().getFullYear();
-            const copyrightElement = document.querySelector('#currentYear');
-
-            if (copyrightElement) {
-                copyrightElement.textContent = currentYear;
-            }
         });
     </script>
 

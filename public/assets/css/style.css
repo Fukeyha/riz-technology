@@ -104,12 +104,12 @@
 }
 
 /* why section */
+/* why section */
 .why_us {
   position: relative;
   z-index: 10;
   margin-top: -150px;
   background-size: cover;
-
 }
 
 .why_us .container {
@@ -133,21 +133,21 @@
   background-size: contain;
 }
 
-
 .why_us .card {
   position: relative;
   border: 2px solid #fff;
   background: transparent;
   border-radius: 10px;
-  min-height: 420px !important;
-  max-width: 320px;
   color: #fff;
   transition: 0.3s ease;
+  width: 100%; /* Ensure full width */
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Add this */
 }
 
 .why_us .card h3 {
   color: #fff;
-  /* white before hover */
   transition: color 0.3s ease;
 }
 
@@ -164,33 +164,29 @@
   z-index: -1;
 }
 
-/* Make columns in the row equal height */
 .why_us .row {
   display: flex;
   flex-wrap: wrap;
 }
 
-/* Make cards stretch equally */
 .why_us .col-lg-3 {
   display: flex;
 }
 
+/* REMOVE THIS FIXED HEIGHT - THIS IS THE PROBLEM */
 .why_us .col-lg-3 .card {
   flex: 1;
   display: flex;
   flex-direction: column;
-  min-height: 580px !important;
+  /* REMOVE: min-height: 580px !important; */
 }
 
 /* Card hover styles */
 .why_us .card:hover {
   background: #fff;
-  /* white background */
   color: #000;
-  /* optional: border becomes black */
   transition: 0.3s ease;
 }
-
 
 /* Headings, text, icons switch to black */
 .why_us .card:hover h4,
@@ -201,10 +197,23 @@
   fill: #000 !important;
 }
 
-
 /* If you have links or buttons inside card */
 .why_us .card:hover a {
   color: #000 !important;
+}
+
+.why_us .card-body {
+  padding: 42px 23px 10px;
+  flex: 1; /* This makes the card body take remaining space */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Add this to make paragraphs take remaining space */
+.why_us .card-body p {
+    min-height: 238px;
+    font-size: 18px;
+    line-height: 27px;
 }
 
 .highlight::before {
@@ -225,15 +234,10 @@
   height: 40px;
 }
 
-/* Card body padding */
-.why_us .col-lg-3 .card .card-body {
-  padding: 42px 23px 10px;
-}
-
 .why_us .slick-initialized .slick-slide {
   display: block;
   padding: 20px 6px;
-  min-height: 420px !important;
+  min-height: auto !important;
 }
 
 .card-volume {
@@ -385,6 +389,11 @@
   background: url(/assets/img/wave-bg.png) center no-repeat;
   background-size: contain;
   z-index: -1;
+}
+.services_section .card p{
+   min-height: 170px;
+    font-size: 18px;
+    line-height: 27px;
 }
 
 .process_section {
@@ -899,6 +908,10 @@
 
   font-size: 18px;
 }
+.blog_section .card p{
+   min-height: 114px;
+ 
+}
 
 .faq_section {
   background-position: bottom;
@@ -1279,13 +1292,14 @@
 .circle-carousel .prev {
   left: -60px;
 }
- .partnerDesk {
-    display: block;
-  }
 
-  .partnerMob {
-    display: none !important;
-  }
+.partnerDesk {
+  display: block;
+}
+
+.partnerMob {
+  display: none !important;
+}
 
 
 @media (max-width: 575.98px) {
@@ -1302,9 +1316,10 @@
     left: 101px;
   }
 
- .partnerDesk {
+  .partnerDesk {
     display: none;
   }
+
   .partnerMob {
     display: block !important;
   }
@@ -1472,13 +1487,16 @@
     font-size: 14pt;
   }
 
-   .partnerDesk {
+  .partnerDesk {
     display: none;
   }
+
   .partnerMob {
     display: block !important;
   }
-
+ .partner_section {
+    background-image: none !important;
+  }
   .customContainer {
     width: auto;
     padding-right: 6px;
@@ -1486,29 +1504,294 @@
     margin-right: 0;
     margin-left: 0;
   }
-    .partner_word::before {
-               width: 250px !important;
-        height: 209px !important;
-        top: 1px;
-        left: 230px;
-    
-    }
-    .partner_word::after {
+
+  .partner_word::before {
+    width: 250px !important;
+    height: 209px !important;
+    top: 1px;
+    left: 230px;
+
+  }
+
+  .partner_word::after {
     top: 15px;
     left: 249px;
     width: 170px;
     height: 170px;
+  }
+    .partnerDiv {
+        height: 424px;
+        width: 100%;
+        position: relative;
     }
-
-
+  .partnerDiv::before {
+    position: absolute;
+    left: -1%;
+    top: 33%;
+    width: 101vw;
+    height: 130px;
+    background-color: #eaddfd;
+    content: '';
+    z-index: 2;
 }
 
-@media (max-width: 767.98px) {}
+  .partner_word {
+    z-index: 3;
+    width: 250px !important;
+    height: 250px !important;
+    left: -18%;
+    top: 26% !important;
+    transform: translate(-30%, 0%) !important;
+  }
+  .partner_img{
+    background-color: none !important;
+  }
 
-@media (max-width: 991.98px) {}
+  .item {
+    transform-origin: center;
+    transition: 0.5s;
+    position: absolute;
+    width: 100px;
+    height: 102px;
+    border-radius: 50%;
+background-color: white;
+    display: inline-block;
+    margin: 0;
+    font-size: 3em;
+    font-family: sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+   .partner_img{
+    background-color: none !important;
+    box-shadow: none !important;
+  }
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: .5s;
+  transform-origin: center;
+}
+
+.controls {
+  position: absolute;
+  top: 47%;
+  width: 99%;
+  display: none;
+  text-align: center;
+}
+
+.left,
+.right {
+  display: inline-block;
+  color: #fff;
+  font-size: 3em;
+  cursor: pointer;
+}
+
+.left {
+  margin-right: 30px;
+}
+
+.right {
+  margin-left: 30px;
+}
+}
+
+@media (max-width: 767.98px) {
+  
+}
+
+@media (max-width: 991.98px) {
+  
+}
 
 
-@media (max-width: 1199.98px) {}
+@media (max-width: 1199.98px) {
+    a {
+    font-size: 11pt;
+}
+.main-btn{
+      padding: 0.6em 1em;
+}
+.main-bg-img{
+  left: 352px;
+}
+.home_banner{
+  height: 68vh;
+}
+h1 {
+    font-size: 55pt;
+}
+       h3 {
+        font-size: 19pt;
+    }
+  h2 {
+    font-size: 33pt;
+   }
+    p {
+        font-size: 13pt;
+    }
+
+.btn-outline-light-custom {
+    color: #fff;
+    font-size: 11pt;
+    padding: 13px 42px;
+    margin-left: 20px;
+}
+.about_section .aboutImage::after {
+    top: -57px;
+    left: 357px;
+    width: 152px;
+    height: 152px;
+  }
+  .about_section .aboutImage::before {
+    top: -59px;
+    left: 356px;
+    width: 349px;
+    height: 156px;
+  }
+  .separator {
+    top: 16px;
+    left: 192px;
+    margin-left: 11px;
+    width: 2px;
+    height: 177px;
+   }
+   .process_section .wave-row::before {
+    top: -153px;
+    left: 25px;
+   }
+   .partner_word::before {
+    content: '';
+    position: absolute;
+    top: 9px;
+   left: 173px;
+    background-image: url(/assets/img/process-logo.png);
+    width: 400px;
+    height: 252px;
+  }
+  .partner_word::after {
+    top: 27px;
+    left: 199px;
+    width: 202px;
+    height: 202px;
+   }
+   .partner_img {
+    width: 101px;
+    height: 107px;
+    
+  }
+  .partner_column img:nth-child(1) {
+    position: absolute;
+    right: 10px;
+    top: -53px;
+    animation-delay: 2s;
+}
+.partner_column img:nth-child(2) {
+    position: absolute;
+    right: 137px;
+    top: 12px;
+}
+.partner_column img:nth-child(3) {
+    position: absolute;
+    right: 143px;
+    top: 175px;
+    animation-delay: 2s;
+}
+.partner_column img:nth-child(4) {
+    position: absolute;
+    right: 38px;
+    top: 257px;
+    animation-delay: 2s;
+}
+.partner4 {
+    position: absolute;
+    left: 9px;
+    top: -57px;
+    animation-delay: 2s;
+}
+.partner5 {
+    position: absolute;
+    left: 138px;
+    top: 20px;
+    animation-delay: 2s;
+}
+.partner6 {
+    position: absolute;
+    left: 148px;
+    bottom: 130px;
+    animation-delay: 2s;
+    width: 116px;
+    height: 116px;
+  }
+  .partner12 {
+    position: absolute;
+    left: 43px;
+    bottom: 56px;
+   }
+   .ceo_section .about_image::before {
+    top: -116px;
+    left: 354px;
+    width: 389px;
+    height: 191px;
+   }
+   .ceo_section .about_image::after {
+    top: -115px;
+    left: 354px;
+    width: 190px;
+    height: 190px;
+    }
+    .blog_section{
+      padding: 0 !important;
+    }
+   .team_section .row .col-lg-4>.team_container {
+    height: 468px;
+}
+.team_section .row .col-lg-4:nth-child(3) .team_member_info_container {
+    top: -29%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+}
+.team_section .row .col-lg-4 .team_member_info_container {
+    top: -29%;
+    left: 113%;
+    transform: translate(-50%, -50%);
+}
+.customContainer {
+    width: auto;
+    padding-right: calc(1.5rem * .5);
+    padding-left: calc(3.5rem * .5);
+    margin-right: auto;
+    margin-left: auto;
+}
+.fs9-1 {
+    font-size: 24pt;
+}
+.location a p {
+    font-size: 15px;
+}
+.location_section {
+    padding: 2px 14px;
+   }
+     .footer-section  .pe-lg-5 {
+        padding-right: -1rem !important;
+    }
+    .partner_section::before {
+
+    width: 99%;
+   }
+}
 
 @media (max-width: 1399.98px) {}
 
@@ -1518,50 +1801,5 @@
   .location_section {
     padding: 50px 0px;
   }
-}
-
-.wrapper{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transition: .5s;
-  transform-origin: center;
-}
-.item{
-  transform-origin: center;
-  transition: .5s;
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  border: 1px solid #FF80AB;
-  display: inline-block;
-  margin: 0;
-  font-size: 3em;
-  font-family: sans-serif;
-  color: #fff;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-}
-.controls {
-    position: absolute;
-    top: 47%;
-    width: 99%;
-    display: none;
-    text-align: center;
-}
-.left, .right{
-  display: inline-block;
-  color: #fff;
-  font-size: 3em;
-  cursor: pointer;
-}
-
-.left{
-  margin-right: 30px;
-}
-.right{
-  margin-left: 30px;
 }
 
