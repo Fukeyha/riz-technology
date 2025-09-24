@@ -27,7 +27,8 @@
         integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 
 <body>
@@ -37,8 +38,7 @@
             <header>
                 <nav class="navbar navbar-expand-lg bg-body-white">
                     <div class="container p-3">
-                        <a class="navbar-brand" href="#"><img src="{{ asset('assets/img/Riz-Logo-01.png') }}"
-                                alt></a>
+                        <a class="navbar-brand" href="#"><img src="{{ asset('assets/img/Riz-Logo-01.png') }}" alt></a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -130,13 +130,13 @@
                                             viewBox="0 0 110.43 123.94" fill="#fff"
                                             style="enable-background:new 0 0 110.43 123.94" xml:space="preserve">
                                             <style type="text/css">
-                                                .st0 {
-                                                    fill-rule: evenodd;
-                                                    clip-rule: evenodd;
-                                                    stroke: #000000;
-                                                    stroke-width: 0.5;
-                                                    stroke-miterlimit: 2.6131;
-                                                }
+                                            .st0 {
+                                                fill-rule: evenodd;
+                                                clip-rule: evenodd;
+                                                stroke: #000000;
+                                                stroke-width: 0.5;
+                                                stroke-miterlimit: 2.6131;
+                                            }
                                             </style>
                                             <g>
                                                 <path class="st0"
@@ -195,8 +195,8 @@
                                             class="img-fluid">
                                     </div>
                                     <div class="card-body">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="50"
-                                            height="50" viewBox="0 0 64 64" data-name="Layer 1" id="Layer_1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="50" height="50"
+                                            viewBox="0 0 64 64" data-name="Layer 1" id="Layer_1">
                                             <title></title>
                                             <path
                                                 d="M2,15.01978a9.76365,9.76365,0,0,0,.7074,2.10382l2.02087.18493a8.35412,8.35412,0,0,0,.8385,1.13373L5.1239,20.376a10.21966,10.21966,0,0,0,1.83179,1.311L8.69281,20.68a8.58722,8.58722,0,0,0,1.36877.42761L10.8681,23h2.26374l.80645-1.89233a8.58966,8.58966,0,0,0,1.36872-.42762l1.73718,1.007,1.83173-1.31091L18.433,18.44244a8.34469,8.34469,0,0,0,.83863-1.13372l2.02093-.18494A9.76526,9.76526,0,0,0,22,15.0199L20.47095,13.702V12.298L22,10.98016a9.76351,9.76351,0,0,0-.70734-2.10382l-2.02093-.18493a8.35724,8.35724,0,0,0-.8385-1.13373L18.8761,5.624a10.22051,10.22051,0,0,0-1.83179-1.311L15.30719,5.32a8.574,8.574,0,0,0-1.36877-.42761L13.1319,3H10.86816l-.80645,1.89233A8.58443,8.58443,0,0,0,8.693,5.32l-1.73718-1.007A10.21827,10.21827,0,0,0,5.12408,5.62384L5.567,7.55756a8.33923,8.33923,0,0,0-.83857,1.13372l-2.02093.18494A9.75883,9.75883,0,0,0,2,10.9801l1.529,1.31781V13.702ZM12,9a4,4,0,1,1-4,4A4,4,0,0,1,12,9Z">
@@ -499,108 +499,68 @@
                     </div>
 
                 </section>
-                     <section class="partner_section my-5 partnerDesk">
+
+                <section class="partner_section my-5 partnerMob">
                     <div class=" text-center">
                         <h2 class="text-dark font-k-l">Our <span class="font-k-b">Partners</span></h2>
                         <p class="px-5">Our credibility and professionalism are further enhanced by our reliable
                             partnerships <br> with several well-known brands and companies.</p>
                     </div>
-                    <div class="container">
-                        <div class="row partner_bg mt-5 pt-5">
-                            <div class="col-lg-4 partner_column position-relative">
-                                <img src="https://riztechnology.com/assets/images/partner/partner-1.png "
-                                    class="img-fluid partner_img" alt="partner">
-                                <img src="https://riztechnology.com/assets/images/partner/partner-2.png "
-                                    class="img-fluid partner_img" alt="partner">
-                                <img src="https://riztechnology.com/assets/images/partner/partner-3.png "
-                                    class="img-fluid partner_img" alt="partner">
-                                <img src="https://riztechnology.com/assets/images/partner/partner-4.png "
-                                    class="img-fluid partner_img" alt="partner">
-
-                            </div>
-                            <div class="col-lg-4 position-relative">
-                                <div class="partner_word"></div>
-                            </div>
-                            <div class="col-lg-4 partner_column2 position-relative">
-                                <div class="partner4">
+                    <div class="partnerDiv">
+                        <div class="partner_word">
+                        </div>
+                        <div id="center" class="wrapper">
+                            <div class="item"> <img src="https://riztechnology.com/assets/images/partner/partner-1.png "
+                                    class="img-fluid partner_img" alt="partner"></div>
+                            <div class="item"> <img src="https://riztechnology.com/assets/images/partner/partner-2.png "
+                                    class="img-fluid partner_img" alt="partner"></div>
+                            <div class="item"> <img src="https://riztechnology.com/assets/images/partner/partner-3.png "
+                                    class="img-fluid partner_img" alt="partner"></div>
+                            <div class="item"> <img src="https://riztechnology.com/assets/images/partner/partner-4.png "
+                                    class="img-fluid partner_img" alt="partner"></div>
+                            <div class="item">
+                                <div class="">
                                     <img src="https://riztechnology.com/assets/images/partner/partner-7.png "
                                         class="img-fluid" alt="partner">
                                 </div>
-                                <div class="partner5">
+                            </div>
+                            <div class="item">
+                                <div class="">
                                     <img src="https://riztechnology.com/assets/images/partner/partner-8.png "
                                         class="img-fluid partner_img" alt="partner">
                                 </div>
-                                <div class="partner6">
+                            </div>
+                            <div class="item">
+                                <div class="">
                                     <img src="https://riztechnology.com/assets/images/partner/partner-6.png "
                                         class="img-fluid" alt="partner">
                                 </div>
-
-                                <div class="partner12">
+                            </div>
+                            <div class="item">
+                                <div class="">
                                     <img src="https://riztechnology.com/assets/images/partner/partner-12.jpeg "
                                         class="img-fluid" alt="partner">
                                 </div>
+                            </div>
+                        </div>
 
-
+                        <div class="controls selection-off">
+                            <div class="left selection-off" onclick="turnLeft()"><i class="fas fa-caret-left"></i></div>
+                            <div class="right selection-off" onclick="turnRight()"><i class="fas fa-caret-right"></i>
                             </div>
                         </div>
                     </div>
 
-                </section>
-                     <section class="partner_section my-5 partnerMob">
-                    <div class=" text-center">
-                        <h2 class="text-dark font-k-l">Our <span class="font-k-b">Partners</span></h2>
-                        <p class="px-5">Our credibility and professionalism are further enhanced by our reliable
-                            partnerships <br> with several well-known brands and companies.</p>
-                    </div>
-                    <div class="container">
-                        <div class="row partner_bg mt-5 pt-5">
-                            <div class="col-lg-4 partner_column position-relative">
-                                <img src="https://riztechnology.com/assets/images/partner/partner-1.png "
-                                    class="img-fluid partner_img" alt="partner">
-                                <img src="https://riztechnology.com/assets/images/partner/partner-2.png "
-                                    class="img-fluid partner_img" alt="partner">
-                                <img src="https://riztechnology.com/assets/images/partner/partner-3.png "
-                                    class="img-fluid partner_img" alt="partner">
-                                <img src="https://riztechnology.com/assets/images/partner/partner-4.png "
-                                    class="img-fluid partner_img" alt="partner">
-
-                            </div>
-                            <div class="col-lg-4 position-relative">
-                                <div class="partner_word"></div>
-                            </div>
-                            <div class="col-lg-4 partner_column2 position-relative">
-                                <div class="partner4">
-                                    <img src="https://riztechnology.com/assets/images/partner/partner-7.png "
-                                        class="img-fluid" alt="partner">
-                                </div>
-                                <div class="partner5">
-                                    <img src="https://riztechnology.com/assets/images/partner/partner-8.png "
-                                        class="img-fluid partner_img" alt="partner">
-                                </div>
-                                <div class="partner6">
-                                    <img src="https://riztechnology.com/assets/images/partner/partner-6.png "
-                                        class="img-fluid" alt="partner">
-                                </div>
-
-                                <div class="partner12">
-                                    <img src="https://riztechnology.com/assets/images/partner/partner-12.jpeg "
-                                        class="img-fluid" alt="partner">
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
 
                 </section>
-               
+
+
                 <section class="ceo_section py-5 mt-5 position-relative">
                     <div class="container">
                         <div class="row g-5 pt-5">
                             <div class="col-lg-7">
                                 <div class="about_image">
-                                    <img src="{{ asset('assets/img/ceo-img.png') }}" alt="Card image"
-                                        class="img-fluid">
+                                    <img src="{{ asset('assets/img/ceo-img.png') }}" alt="Card image" class="img-fluid">
                                 </div>
                             </div>
                             <div class="col-lg-5">
@@ -931,16 +891,16 @@
                                             <div class="col-md-12 mb-3 wow animate__ animate__bounceInDown"
                                                 data-wow-delay="1.5"
                                                 style="visibility: visible; animation-name: bounceInDown;">
-                                                <input type="text" name="company_email"
-                                                    class="form-control emailVal" placeholder="Company Email">
+                                                <input type="text" name="company_email" class="form-control emailVal"
+                                                    placeholder="Company Email">
                                             </div>
 
 
                                             <div class="col-md-12 wow mb-3 animate__ animate__bounceInDown"
                                                 data-wow-delay="2.2"
                                                 style="visibility: visible; animation-name: bounceInDown;">
-                                                <textarea class="form-control " name="description" id="" cols="30" rows="10"
-                                                    placeholder="How Can We Help You?"></textarea>
+                                                <textarea class="form-control " name="description" id="" cols="30"
+                                                    rows="10" placeholder="How Can We Help You?"></textarea>
                                             </div>
                                             <div class="col-md-12  mb-3  wow animate__ text-white animate__bounceInDown"
                                                 data-wow-delay="1.5"
@@ -1096,8 +1056,8 @@
                             <div class="location seperator   position-relative   wow animate__ animate__fadeInUp animated"
                                 data-wow-duration="1.3s"
                                 style="visibility: visible; animation-duration: 1.3s; animation-name: fadeInUp;">
-                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
-                                    viewBox="-5.0 -10.0 110.0 135.0" width="100px" height="120px">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="-5.0 -10.0 110.0 135.0"
+                                    width="100px" height="120px">
                                     <path
                                         d="m86.699 95.77c-0.80078-0.089843-1.5898-0.23047-2.3906-0.33984-3.5312-0.48828-7.0586-1-10.59-1.5-2.4688-0.35156-4.9414-0.69922-7.3984-1.0703-0.10937-0.019531-0.25-0.21094-0.26953-0.32812-0.039062-0.28125-0.03125-0.57812-0.011719-0.85938 0.019532-0.37109-0.12109-0.51953-0.5-0.51172-0.58984 0.019532-1.1797 0.011719-1.8398 0.011719v-1.1016c0-0.78125-0.011719-1.5703 0.011719-2.3516 0.011718-0.37891-0.12109-0.51953-0.5-0.5-0.46094 0.019531-0.92969 0.011719-1.4609 0.011719v-0.57812-11c0-0.60156-0.019531-0.60938-0.62109-0.60938h-1.2305v-0.57031c0-3.3789-0.011719-6.7617 0.011718-10.141 0-0.48047-0.17188-0.62109-0.60938-0.60156-0.41016 0.03125-0.82031 0.011719-1.2891 0.011719v-0.87891c0-4.0508-0.011719-8.1016-0.011719-12.148 0-0.62891-0.03125-0.66016-0.64062-0.66016h-1.1016v-0.60156-12.441c0-0.71875-0.039062-0.76172-0.75-0.76172h-1.0703v-0.58984-10.09c0-0.71094 0-0.71094-0.71094-0.71094h-0.62891v-0.60938c0-1.7305-0.03125-3.4609 0.011719-5.1914 0.019531-0.69922-0.10156-1.2891-0.62891-1.7617-0.28125-0.23828-0.33984-0.53906-0.32812-0.89844 0.011718-1.2812 0.011718-2.5586-0.011719-3.8398 0-0.17969-0.10156-0.37891-0.21094-0.53906-0.39844-0.64844-0.80859-1.2383-0.78125-2.0898 0.070312-1.8398 0.058593-3.6797 0-5.5195-0.011719-0.41016-0.33984-0.80078-0.55859-1.2891-0.48828 0.5-0.80859 0.87891-0.78906 1.5273 0.058594 1.7109-0.03125 3.4297 0.039063 5.1406 0.039062 0.87891-0.33984 1.5312-0.76953 2.1992-0.10937 0.17188-0.19922 0.39062-0.21094 0.60156-0.019531 1.3086 0.011719 2.6289-0.019531 3.9414-0.011719 0.26172-0.10938 0.57031-0.28125 0.76172-0.41016 0.44922-0.57031 0.92188-0.55859 1.5508 0.050781 1.8086 0.019531 3.6211 0.019531 5.4297 0 0.16016-0.011719 0.30859-0.019531 0.51172-0.30859 0-0.58984 0.019532-0.87109-0.011718-0.32812-0.039063-0.42969 0.10937-0.42188 0.41016v0.33984c0 3.4414-0.011719 6.8906-0.011719 10.328v0.39844c-0.51953-0.039062-1.0195-0.078125-1.5781-0.12109v13.859c-0.44922 0-0.83984 0.03125-1.2305-0.011719-0.41016-0.039062-0.51953 0.078126-0.51953 0.48828 0.011718 4.1992 0 8.3906 0 12.59v0.69922c-0.5 0-0.96875 0.03125-1.4414-0.011718-0.44922-0.03125-0.60156 0.089843-0.60156 0.57812 0.019531 3.4297 0.011719 6.8516 0.011719 10.281 0 0.12891-0.019532 0.25-0.03125 0.44141-0.46875 0-0.92969 0.019531-1.3906-0.011719-0.44141-0.03125-0.57812 0.12109-0.57812 0.57031 0.019531 3.6797 0.011718 7.3711 0.011718 11.051v0.55859c-0.58984 0-1.1289 0.011718-1.6602-0.011719-0.33984-0.011719-0.44922 0.12109-0.44922 0.44922 0.011719 1.1484 0 2.3008 0 3.5117-0.64062 0-1.2383 0.03125-1.8398-0.011718-0.44141-0.03125-0.57031 0.14844-0.53906 0.55859 0.019531 0.35156 0 0.69922 0 1.1602-0.28906-0.078126-0.51172-0.14063-0.73828-0.19141-0.12109-0.019531-0.25-0.03125-0.37109-0.011719-3.0391 0.44141-6.0703 0.89063-9.1094 1.3398-3.3398 0.48828-6.6914 0.89844-10.012 1.5-0.48047 0.089844-0.96094 0.14844-1.4414 0.19922-0.03125 0.19141-0.12109 0.71094-0.19922 1.1914h74.039c-0.14844-0.36328-0.24609-0.74609-0.32812-1.125zm-22.027-3.3984c0.011719 0.12109 0.03125 0.25 0.039063 0.42188h-2.9883c0.011719-0.14844 0.011719-0.28125 0.019532-0.42188zm-2.2734-3.9219v2.6602c0 0.5-0.37891 0.28125-0.67188 0.35938v-2.3984h-0.67969v3.7109h-1.2188v-4.3398h2.5703zm-1.9375-12.238v0.57812c0 3.3594-0.011719 6.7188 0.011718 10.078 0 0.46875-0.12109 0.69922-0.69141 0.62109v-10.41c-0.26172 0.019531-0.46875 0.039063-0.73047 0.050781v15.648l-1.0508 0.003906v-16.57zm-1.9414-11.289v10.25c-0.17188 0.03125-0.33984 0.070313-0.55859 0.10938v-9.4297c-0.26172 0.019532-0.46094 0.03125-0.69922 0.050782v26.879h-1.2617v-27.859zm-2.5312-0.91016v-2.4297h0.64844v2.3398c-0.21484 0.027344-0.41797 0.058594-0.64844 0.089844zm0.68359-12.75v9.0508c-0.21875 0.011719-0.44141 0.019531-0.71094 0.039062v-8.5703c-0.26953 0.011719-0.48828 0.019531-0.73828 0.03125v8.5586h-1.1602v-9.1094zm-1.4922 10.438v31.102h-1.1211v-31.102zm-1.6211-24.277c0.42969 0 0.85938-0.050781 1.3516-0.078125 0.011719 0.21094 0.03125 0.39844 0.03125 0.57812 0 3.9102 0 7.8086-0.011718 11.719 0 0.69141 0 0.69141-0.75 0.66016v-12.242c-0.35156 0.058594-0.60938 0.10938-0.89844 0.16016v22.191h-0.85938v-23.289h0.64844c-0.011718 0.03125-0.019531 0.070312-0.03125 0.10156 0.17969 0.066406 0.35156 0.19922 0.51953 0.19922zm-0.28906 24.316v31.02h-0.83984v-31.02zm-0.16016-35.75v9.8398c-0.19922 0.011719-0.42969 0.03125-0.71875 0.050781v-0.60156c0-1.9805 0.011719-3.9688 0.011719-5.9492 0-1.1211-0.30859-1.4492-1.4297-1.5312-0.089844-0.011719-0.19141-0.019531-0.30859-0.03125v-1.7812zm-3.5703 34.441v-23.281h2.0703v23.281zm2.0703 1.332v30.988h-2.0703v-30.988zm-2.0703-25.902c-0.011718-0.19141-0.03125-0.35938-0.03125-0.53125-0.011718-1.9805-0.011718-3.9609-0.011718-5.9414 0-0.62109 0.070312-0.69141 0.69141-0.69141 0.30078 0 0.60938 0 0.91016 0.011719 0.33984 0.011719 0.53906 0.19922 0.53906 0.55078v6.6094l-2.0977 0.003906zm1.0625-11.121v-4.6406c1.3594 0.87109 1.3594 0.87891 1.3594 2.5117v2.1289zm-1.0508-6.6484c0.32031-0.28125 0.39062-0.60938 0.37891-1.0195-0.019532-1.1992 0.03125-2.3984-0.019532-3.6016-0.019531-0.60156 0.23047-1.0195 0.55859-1.5117 0.30078 0.44141 0.55859 0.80859 0.53906 1.3594-0.039062 1.2305 0 2.4688-0.019531 3.6992-0.011719 0.42969 0.089844 0.78125 0.42969 1.0586 0.5 0.42188 0.69922 0.92969 0.48047 1.6289-0.35156-0.23828-0.71094-0.44922-1.0508-0.71094-0.28906-0.21875-0.51953-0.28125-0.83984-0.050782-0.28125 0.19922-0.60937 0.33984-0.91016 0.5-0.20703-0.58203 0.050782-1 0.45312-1.3516zm-0.12109 2.3789c0.25-0.10156 0.46875-0.26953 0.73828-0.39844-0.44922 0.55859-0.26172 1.1992-0.26953 1.8203-0.019532 0.94141-0.011719 1.8789-0.011719 2.8398h-0.85938v-0.78125c0-0.92969 0.019531-1.8594-0.011719-2.7891-0.015625-0.33984 0.085937-0.55078 0.41406-0.69141zm-1.5312 5.5117h1.9883c0 0.55078 0.011719 1.0781-0.011719 1.6211 0 0.078126-0.14062 0.19141-0.23828 0.23047-0.73047 0.26172-0.87891 0.46094-0.87891 1.2188v6.7617l-0.85937-0.003906zm-1.707 11.34c0.42969 0.039063 0.85156 0.078126 1.2695 0.12891 0.28906 0.039062 0.48828 0.011719 0.41016-0.35938h0.83984v23.32h-1.1484l-0.003906-22.359h-0.73828v12.281c-0.23828-0.050781-0.42969-0.078125-0.64062-0.12891v-12.883zm2.5391 24.43v31.031h-1.1406v-31.031zm-4.2695-10.512h2.3594v9.1406h-0.87891v-8.5586h-0.73047v8.5195h-0.75zm2.3398 10.441v31.121h-0.87109v-31.121zm-1.6289-0.078126v2.4492c-0.75-0.10938-0.75-0.10938-0.75-0.80078v-1.6484zm-2.5625 3.4688c0-0.03125 0.011719-0.058593 0.03125-0.14062h2.5312v27.859h-1.3008v-26.867h-0.73828v9.3789c-0.32031-0.039062-0.53906-0.050781-0.53906-0.42188 0.015625-3.2773 0.007812-6.5391 0.015625-9.8086zm-4.1289 23.32h2.6094c0-0.44141 0.21094-0.89844-0.48047-0.92188v-11.258h2.4609v16.578h-1.1914v-15.66h-0.71094v15.66h-1.5v-3.7305h-0.75v2.3711c-0.058594 0.019531-0.12109 0.039062-0.17188 0.070312-0.078125-0.12109-0.23828-0.23828-0.23828-0.37109-0.039062-0.89062-0.027343-1.7773-0.027343-2.7383zm-2.3008 4c0.82812 0 1.6602-0.011719 2.4883 0.011719 0.10938 0 0.21094 0.17188 0.30859 0.26953-0.03125 0.050781-0.058593 0.089844-0.089843 0.14062-0.83984 0-1.6914 0.011719-2.5312-0.011719-0.10938 0-0.21094-0.19922-0.30859-0.30078 0.042969-0.039062 0.09375-0.078125 0.13281-0.10938zm-15.102 3.4688-0.011719-0.078125c2.0898-0.28906 4.1719-0.58984 6.2617-0.89062 1.8789-0.26953 3.7617-0.55859 5.6484-0.80859 0.32031-0.039062 0.66016 0.019531 1 0.019531 10.41 0 20.809-0.019531 31.219 0.019532 1.4609 0.011718 2.9219 0.30859 4.3789 0.51172 2.5195 0.33984 5.0391 0.69141 7.5508 1.0391 0.25 0.03125 0.48828 0.089844 0.73047 0.19141z">
                                     </path>
@@ -1142,8 +1102,7 @@
                                 <!-- Grid column -->
                                 <div class="col-lg-4 pe-lg-5">
                                     <!-- Content -->
-                                    <img src="https://riztechnology.com/assets/images/logo/footerLogo.png"
-                                        alt="">
+                                    <img src="https://riztechnology.com/assets/images/logo/footerLogo.png" alt="">
                                     <p class="py-3">
                                         Riz Technology is wholeheartedly committed to establishing a distinguished
                                         reputation as a
@@ -1183,8 +1142,7 @@
                                         </a>
                                     </p>
                                     <p class="mt-3">
-                                        <a href="https://riztechnology.com/services/sla-management"
-                                            class="text-reset ">
+                                        <a href="https://riztechnology.com/services/sla-management" class="text-reset ">
                                             SLA Management
                                         </a>
                                     </p>
@@ -1367,231 +1325,169 @@
     <script src="./assets/js/smooth.min.js"></script>
     <script src="./assets/js/script.js"></script>
     <script type="text/javascript">
-        $('.slider').slick({
-            dots: false,
-            infinite: true,
-            speed: 500,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            prevArrow: '<button type="button" class="slick-prev"></button>',
-            nextArrow: '<button type="button" class="slick-next"></button>',
-            responsive: [{
+    $('.slider').slick({
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        prevArrow: '<button type="button" class="slick-prev"></button>',
+        nextArrow: '<button type="button" class="slick-next"></button>',
+        responsive: [{
 
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        dots: false,
-                        arrow: false
-                    }
-                },
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false,
+                    arrow: false
                 }
-                // You can unslick at a given breakpoint now by adding:
-                // settings: "unslick"
-                // instead of a settings object
-            ]
-        });
-        $('.why_section_slider').slick({
-            dots: false,
-            infinite: true,
-            arrows: false,
-            speed: 500,
-            slidesToShow: 4,
-            slidesToScroll: 1,
-
-            responsive: [{
-
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        dots: false,
-                        arrow: false
-                    }
-                },
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
                 }
-                // You can unslick at a given breakpoint now by adding:
-                // settings: "unslick"
-                // instead of a settings object
-            ]
-        });
-        $('.process_slider').slick({
-            dots: false,
-            infinite: true,
-            speed: 500,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-
-            responsive: [{
-
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        dots: false,
-                        arrow: false
-                    }
-                },
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
                 }
-                // You can unslick at a given breakpoint now by adding:
-                // settings: "unslick"
-                // instead of a settings object
-            ]
-        });
-        $(document).ready(function() {
-            var $items = $('.item');
-            var itemsId = $items.toArray();
-            var sectionDeg = 360 / itemsId.length;
-            var radianSectionDeg = (sectionDeg * Math.PI * 2) / 360;
-            var radiusLength = 170;
-
-            function updatePositions() {
-                $.each(itemsId, function(i, item) {
-                    var itemWidth = $(item).outerWidth();
-                    var itemHeight = $(item).outerHeight();
-                    $(item).css({
-                        top: radiusLength * Math.sin(radianSectionDeg * i - Math.PI / 2) -
-                            itemHeight / 2 + 'px',
-                        left: radiusLength * Math.cos(radianSectionDeg * i - Math.PI / 2) -
-                            itemWidth / 2 + 'px',
-                    });
-                });
             }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
+    });
+    $('.why_section_slider').slick({
+        dots: false,
+        infinite: true,
+        arrows: false,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 1,
 
-            updatePositions();
+        responsive: [{
 
-            var rotation = 0;
-            var $center = $('#center');
-
-            function turnLeft() {
-                rotation += radianSectionDeg;
-                $center.css('transform', 'rotate(' + rotation + 'rad)');
-                $items.each(function() {
-                    $(this).css('transform', 'rotate(' + -rotation + 'rad)');
-                });
-            }
-
-            function turnRight() {
-                rotation -= radianSectionDeg;
-                $center.css('transform', 'rotate(' + rotation + 'rad)');
-                $items.each(function() {
-                    $(this).css('transform', 'rotate(' + -rotation + 'rad)');
-                });
-            }
-
-            $('.left').on('click', function() {
-                turnLeft();
-            });
-
-            $('.right').on('click', function() {
-                turnRight();
-            });
-
-            setInterval(function() {
-                turnRight();
-            }, 2000);
-
-            $(window).on('resize', updatePositions);
-        });
-
-        $(document).ready(function() {
-            function startCounterAnimation() {
-                $('.seperator h3, .glink h3,.glink p.review').each(function() {
-                    var $this = $(this);
-                    var text = $this.text();
-                    var countTo = parseInt(text, 10);
-
-                    if (!isNaN(countTo)) {
-                        var duration = text.includes('25 Years') ? 2000 : 3000;
-
-                        $({
-                            countNum: 0
-                        }).animate({
-                            countNum: countTo
-                        }, {
-                            duration: duration,
-                            easing: 'swing',
-                            step: function() {
-                                $this.text(
-                                    Math.floor(this.countNum) +
-                                    text.replace(/^\d+/, '')
-                                );
-                            },
-                            complete: function() {
-                                $this.text(this.countNum + text.replace(/^\d+/, ''));
-                            }
-                        });
-                    }
-                });
-            }
-
-            var observer = new IntersectionObserver(
-                function(entries) {
-                    entries.forEach(function(entry) {
-                        if (entry.isIntersecting) {
-                            startCounterAnimation();
-                            observer.unobserve(entry.target);
-                        }
-                    });
-                }, {
-                    threshold: 0.5
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false,
+                    arrow: false
                 }
-            );
-
-            var target = document.getElementById('counterSection');
-            observer.observe(target);
-        });
-
-        document.addEventListener('DOMContentLoaded', function() {
-            const currentYear = new Date().getFullYear();
-            const copyrightElement = document.querySelector('#currentYear');
-
-            if (copyrightElement) {
-                copyrightElement.textContent = currentYear;
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
             }
-        });
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
+    });
+    $('.process_slider').slick({
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+
+        responsive: [{
+
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false,
+                    arrow: false
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
+    });
+    $(document).ready(function() {
+
+        var htmlCollection = document.getElementsByClassName('item');
+        //getting elements by class name into an HTMLCollection
+
+        var itemsId = Array.from(htmlCollection);
+        //turning the HTMLcollection into an array for easier manipulation of the elements
+
+        var sectionDeg = 360 / itemsId.length;
+        //sectioning the (imaginary) circle into a number of section equalling the number of items
+        //it can be used on more elements
+
+        var radianSectionDeg = sectionDeg * Math.PI * 2 / 360;
+        //transforming from degrees into radians
+
+        var radiusLength = 200;
+        //the distance between the center of the circle to the element
+        //edit this number to increase/decrease that distance
+
+        for (var i = 0; i < itemsId.length; i++) {
+            itemsId[i].style.top = radiusLength * Math.sin(radianSectionDeg * i - 1.5708) - 50 + 'px';
+            itemsId[i].style.left = radiusLength * Math.cos(radianSectionDeg * i - 1.5708) - 50 + 'px';
+        }
+        //setting the top and left positions of each elemenent based on the following formula:
+        //(x, y) = (r * cos(θ), r * sin(θ)) like this:
+        //x = (r * cos(θ) => left
+        //y = r * sin(θ) => top
+        //1.5708 is a radian used put the first element on top - basically 90deg
+
+        var rotation = 0;
+        var center = document.getElementById('center');
+        //we are going to rotate the wrapper of the elements
+
+        window.turnLeft = function() {
+            rotation = rotation + radianSectionDeg;
+            center.style.transform = 'rotate(' + rotation + 'rad)';
+            for (var i = 0; i < itemsId.length; i++) {
+                itemsId[i].style.transform = 'rotate(' + -rotation + 'rad)';
+            }
+        }
+
+        window.turnRight = function() {
+            rotation = rotation - radianSectionDeg;
+            center.style.transform = 'rotate(' + rotation + 'rad)';
+            for (var i = 0; i < itemsId.length; i++) {
+                itemsId[i].style.transform = 'rotate(' + -rotation + 'rad)';
+            }
+        }
+
+    });
     </script>
 
 </body>
