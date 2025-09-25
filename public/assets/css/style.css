@@ -1301,7 +1301,366 @@
   display: none !important;
 }
 
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  a {
+    font-size: 11pt;
+}
+.main-btn{
+      padding: 0.6em 1em;
+}
+.main-bg-img{
+  left: 352px;
+}
+.home_banner{
+  height: 68vh;
+}
+h1 {
+    font-size: 55pt;
+}
+       h3 {
+        font-size: 19pt;
+    }
+  h2 {
+    font-size: 33pt;
+   }
+    p {
+        font-size: 13pt;
+    }
 
+.btn-outline-light-custom {
+    color: #fff;
+    font-size: 11pt;
+    padding: 13px 42px;
+    margin-left: 20px;
+}
+.about_section .aboutImage::after {
+    top: -57px;
+    left: 357px;
+    width: 152px;
+    height: 152px;
+  }
+  .about_section .aboutImage::before {
+    top: -59px;
+    left: 356px;
+    width: 349px;
+    height: 156px;
+  }
+  .separator {
+    top: 16px;
+    left: 192px;
+    margin-left: 11px;
+    width: 2px;
+    height: 177px;
+   }
+   .process_section .wave-row::before {
+    top: -153px;
+    left: 25px;
+   }
+   .partner_word::before {
+    content: '';
+    position: absolute;
+    top: 9px;
+   left: 173px;
+    background-image: url(/assets/img/process-logo.png);
+    width: 400px;
+    height: 252px;
+  }
+  .partner_word::after {
+    top: 27px;
+    left: 199px;
+    width: 202px;
+    height: 202px;
+   }
+   .partner_img {
+    width: 101px;
+    height: 107px;
+    
+  }
+  .partner_column img:nth-child(1) {
+    position: absolute;
+    right: 10px;
+    top: -53px;
+    animation-delay: 2s;
+}
+.partner_column img:nth-child(2) {
+    position: absolute;
+    right: 137px;
+    top: 12px;
+}
+.partner_column img:nth-child(3) {
+    position: absolute;
+    right: 143px;
+    top: 175px;
+    animation-delay: 2s;
+}
+.partner_column img:nth-child(4) {
+    position: absolute;
+    right: 38px;
+    top: 257px;
+    animation-delay: 2s;
+}
+.partner4 {
+    position: absolute;
+    left: 9px;
+    top: -57px;
+    animation-delay: 2s;
+}
+.partner5 {
+    position: absolute;
+    left: 138px;
+    top: 20px;
+    animation-delay: 2s;
+}
+.partner6 {
+    position: absolute;
+    left: 148px;
+    bottom: 130px;
+    animation-delay: 2s;
+    width: 116px;
+    height: 116px;
+  }
+  .partner12 {
+    position: absolute;
+    left: 43px;
+    bottom: 56px;
+   }
+   .ceo_section .about_image::before {
+    top: -116px;
+    left: 354px;
+    width: 389px;
+    height: 191px;
+   }
+   .ceo_section .about_image::after {
+    top: -115px;
+    left: 354px;
+    width: 190px;
+    height: 190px;
+    }
+    .blog_section{
+      padding: 0 !important;
+    }
+   .team_section .row .col-lg-4>.team_container {
+    height: 468px;
+}
+.team_section .row .col-lg-4:nth-child(3) .team_member_info_container {
+    top: -29%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+}
+.team_section .row .col-lg-4 .team_member_info_container {
+    top: -29%;
+    left: 113%;
+    transform: translate(-50%, -50%);
+}
+.customContainer {
+    width: auto;
+    padding-right: calc(1.5rem * .5);
+    padding-left: calc(3.5rem * .5);
+    margin-right: auto;
+    margin-left: auto;
+}
+.fs9-1 {
+    font-size: 24pt;
+}
+.location a p {
+    font-size: 15px;
+}
+.location_section {
+    padding: 2px 14px;
+   }
+     .footer-section  .pe-lg-5 {
+        padding-right: -1rem !important;
+    }
+    .partner_section::before {
+
+    width: 99%;
+   }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+ a {
+    font-size: 11pt;
+}
+.main-btn{
+      padding: 0.6em 1em;
+}
+.main-bg-img{
+  left: 352px;
+}
+.home_banner{
+  height: 68vh;
+}
+h1 {
+    font-size: 55pt;
+}
+       h3 {
+        font-size: 19pt;
+    }
+  h2 {
+    font-size: 33pt;
+   }
+    p {
+        font-size: 13pt;
+    }
+
+.btn-outline-light-custom {
+    color: #fff;
+    font-size: 11pt;
+    padding: 13px 42px;
+    margin-left: 20px;
+}
+.about_section .aboutImage::after {
+    top: -57px;
+    left: 357px;
+    width: 152px;
+    height: 152px;
+  }
+  .about_section .aboutImage::before {
+    top: -59px;
+    left: 356px;
+    width: 349px;
+    height: 156px;
+  }
+  .separator {
+    top: 16px;
+    left: 192px;
+    margin-left: 11px;
+    width: 2px;
+    height: 177px;
+   }
+   .process_section .wave-row::before {
+    top: -153px;
+    left: 25px;
+   }
+   .partner_word::before {
+    content: '';
+    position: absolute;
+    top: 9px;
+   left: 173px;
+    background-image: url(/assets/img/process-logo.png);
+    width: 400px;
+    height: 252px;
+  }
+  .partner_word::after {
+    top: 27px;
+    left: 199px;
+    width: 202px;
+    height: 202px;
+   }
+   .partner_img {
+    width: 101px;
+    height: 107px;
+    
+  }
+  .partner_column img:nth-child(1) {
+    position: absolute;
+    right: 10px;
+    top: -53px;
+    animation-delay: 2s;
+}
+.partner_column img:nth-child(2) {
+    position: absolute;
+    right: 137px;
+    top: 12px;
+}
+.partner_column img:nth-child(3) {
+    position: absolute;
+    right: 143px;
+    top: 175px;
+    animation-delay: 2s;
+}
+.partner_column img:nth-child(4) {
+    position: absolute;
+    right: 38px;
+    top: 257px;
+    animation-delay: 2s;
+}
+.partner4 {
+    position: absolute;
+    left: 9px;
+    top: -57px;
+    animation-delay: 2s;
+}
+.partner5 {
+    position: absolute;
+    left: 138px;
+    top: 20px;
+    animation-delay: 2s;
+}
+.partner6 {
+    position: absolute;
+    left: 148px;
+    bottom: 130px;
+    animation-delay: 2s;
+    width: 116px;
+    height: 116px;
+  }
+  .partner12 {
+    position: absolute;
+    left: 43px;
+    bottom: 56px;
+   }
+   .ceo_section .about_image::before {
+    top: -116px;
+    left: 354px;
+    width: 389px;
+    height: 191px;
+   }
+   .ceo_section .about_image::after {
+    top: -115px;
+    left: 354px;
+    width: 190px;
+    height: 190px;
+    }
+    .blog_section{
+      padding: 0 !important;
+    }
+   .team_section .row .col-lg-4>.team_container {
+    height: 468px;
+}
+.team_section .row .col-lg-4:nth-child(3) .team_member_info_container {
+    top: -29%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+}
+.team_section .row .col-lg-4 .team_member_info_container {
+    top: -29%;
+    left: 113%;
+    transform: translate(-50%, -50%);
+}
+.customContainer {
+    width: auto;
+    padding-right: calc(1.5rem * .5);
+    padding-left: calc(3.5rem * .5);
+    margin-right: auto;
+    margin-left: auto;
+}
+.fs9-1 {
+    font-size: 24pt;
+}
+.location a p {
+    font-size: 15px;
+}
+.location_section {
+    padding: 2px 14px;
+   }
+     .footer-section  .pe-lg-5 {
+        padding-right: -1rem !important;
+    }
+    .partner_section::before {
+
+    width: 99%;
+   }
+}
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 767.98px) {
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* Your styles here */
+}
 @media (max-width: 575.98px) {
   h1 {
     font-size: 20pt;
@@ -1608,190 +1967,8 @@ background-color: white;
 }
 }
 
-@media (max-width: 767.98px) {
-  
-}
-
-@media (max-width: 991.98px) {
-  
-}
 
 
-@media (max-width: 1199.98px) {
-    a {
-    font-size: 11pt;
-}
-.main-btn{
-      padding: 0.6em 1em;
-}
-.main-bg-img{
-  left: 352px;
-}
-.home_banner{
-  height: 68vh;
-}
-h1 {
-    font-size: 55pt;
-}
-       h3 {
-        font-size: 19pt;
-    }
-  h2 {
-    font-size: 33pt;
-   }
-    p {
-        font-size: 13pt;
-    }
-
-.btn-outline-light-custom {
-    color: #fff;
-    font-size: 11pt;
-    padding: 13px 42px;
-    margin-left: 20px;
-}
-.about_section .aboutImage::after {
-    top: -57px;
-    left: 357px;
-    width: 152px;
-    height: 152px;
-  }
-  .about_section .aboutImage::before {
-    top: -59px;
-    left: 356px;
-    width: 349px;
-    height: 156px;
-  }
-  .separator {
-    top: 16px;
-    left: 192px;
-    margin-left: 11px;
-    width: 2px;
-    height: 177px;
-   }
-   .process_section .wave-row::before {
-    top: -153px;
-    left: 25px;
-   }
-   .partner_word::before {
-    content: '';
-    position: absolute;
-    top: 9px;
-   left: 173px;
-    background-image: url(/assets/img/process-logo.png);
-    width: 400px;
-    height: 252px;
-  }
-  .partner_word::after {
-    top: 27px;
-    left: 199px;
-    width: 202px;
-    height: 202px;
-   }
-   .partner_img {
-    width: 101px;
-    height: 107px;
-    
-  }
-  .partner_column img:nth-child(1) {
-    position: absolute;
-    right: 10px;
-    top: -53px;
-    animation-delay: 2s;
-}
-.partner_column img:nth-child(2) {
-    position: absolute;
-    right: 137px;
-    top: 12px;
-}
-.partner_column img:nth-child(3) {
-    position: absolute;
-    right: 143px;
-    top: 175px;
-    animation-delay: 2s;
-}
-.partner_column img:nth-child(4) {
-    position: absolute;
-    right: 38px;
-    top: 257px;
-    animation-delay: 2s;
-}
-.partner4 {
-    position: absolute;
-    left: 9px;
-    top: -57px;
-    animation-delay: 2s;
-}
-.partner5 {
-    position: absolute;
-    left: 138px;
-    top: 20px;
-    animation-delay: 2s;
-}
-.partner6 {
-    position: absolute;
-    left: 148px;
-    bottom: 130px;
-    animation-delay: 2s;
-    width: 116px;
-    height: 116px;
-  }
-  .partner12 {
-    position: absolute;
-    left: 43px;
-    bottom: 56px;
-   }
-   .ceo_section .about_image::before {
-    top: -116px;
-    left: 354px;
-    width: 389px;
-    height: 191px;
-   }
-   .ceo_section .about_image::after {
-    top: -115px;
-    left: 354px;
-    width: 190px;
-    height: 190px;
-    }
-    .blog_section{
-      padding: 0 !important;
-    }
-   .team_section .row .col-lg-4>.team_container {
-    height: 468px;
-}
-.team_section .row .col-lg-4:nth-child(3) .team_member_info_container {
-    top: -29%;
-    left: 10%;
-    transform: translate(-50%, -50%);
-}
-.team_section .row .col-lg-4 .team_member_info_container {
-    top: -29%;
-    left: 113%;
-    transform: translate(-50%, -50%);
-}
-.customContainer {
-    width: auto;
-    padding-right: calc(1.5rem * .5);
-    padding-left: calc(3.5rem * .5);
-    margin-right: auto;
-    margin-left: auto;
-}
-.fs9-1 {
-    font-size: 24pt;
-}
-.location a p {
-    font-size: 15px;
-}
-.location_section {
-    padding: 2px 14px;
-   }
-     .footer-section  .pe-lg-5 {
-        padding-right: -1rem !important;
-    }
-    .partner_section::before {
-
-    width: 99%;
-   }
-}
 
 @media (max-width: 1399.98px) {}
 
@@ -1802,4 +1979,6 @@ h1 {
     padding: 50px 0px;
   }
 }
+
+
 

@@ -79,46 +79,60 @@
 
             <main>
                 <section class="home_banner pt-5">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12 text-center">
-                                <img src="{{ asset('assets/img/background-image-2.png') }}" alt="Card image"
-                                    class="img-fluid main-bg-img mb-3">
-                                <h1 class="banner_text position-relative">
-                                    <span class="font1">Empowering Businesses</span> <br>
-                                    <span class="font2">Through Digital Transformation</span>
-                                </h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
 
-                                <p class="pt-2">At RIZ Technologies, we distinguish ourselves through our extensive
-                                    range of IT
-                                    solutions and
-                                    advanced technologies. Our exceptional offerings include cloud computing,
-                                    cybersecurity, data analytics, and digital transformation, all customized to support
-                                    business growth.</p>
+        <!-- Image animation -->
+        <img src="{{ asset('assets/img/background-image-2.png') }}" alt="Card image"
+          class="img-fluid main-bg-img mb-3 wow animate__animated animate__fadeInDown"
+          data-wow-duration="2s" data-wow-delay="0.5s">
 
+        <!-- Heading animation -->
+        <h1 class="banner_text position-relative wow animate__animated animate__bounceInDown"
+          data-wow-duration="2.5s" data-wow-delay="1s">
+          <span class="font1">Empowering Businesses</span> <br>
+          <span class="font2">Through Digital Transformation</span>
+        </h1>
 
-                                <div class=" flex-md-row justify-content-center gap-4 p-3">
-                                    <a href="#" class="btn main-btn">Get Started</a>
-                                    <a href="#" class="btn btn-outline-light-custom">Learn More</a>
-                                </div>
-                            </div>
+        <!-- Paragraph animation -->
+        <p class="pt-2 wow animate__animated animate__fadeInUp"
+          data-wow-duration="2s" data-wow-delay="1.5s">
+          At RIZ Technologies, we distinguish ourselves through our extensive
+          range of IT solutions and advanced technologies. Our exceptional offerings include cloud computing,
+          cybersecurity, data analytics, and digital transformation, all customized to support business growth.
+        </p>
 
-                        </div>
-                </section>
+        <!-- Buttons animation -->
+        <div class="flex-md-row justify-content-center gap-4 p-3">
+          <a href="#" class="btn main-btn wow animate__animated animate__zoomIn"
+            data-wow-duration="3s" data-wow-delay="2s">Get Started</a>
+          <a href="#" class="btn btn-outline-light-custom wow animate__animated animate__zoomIn"
+            data-wow-duration="2s" data-wow-delay="2.3s">Learn More</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
                 <section class="why_us pt-5 ">
-                    <div class="container bg-card">
+                    <div class="container bg-card wow animate__animated animate__backInLeft"
+          data-wow-duration="2.5s" data-wow-delay="1.5s">
                         <div class="row justify-content-center">
                             <!-- Section Heading -->
                             <div class="col-12 text-center mt-5 pt-5">
-                                <h3 class="text-white ">Why Us</h3>
-                                <h2 class="pt-3 font-k-l">Transforming IT Into <br> <span class="font-k-b"> An
+                                <h3 class="text-white wow animate__animated animate__backInDown"
+          data-wow-duration="2s" data-wow-delay="0.5s">Why Us</h3>
+                                <h2 class="pt-3 font-k-l wow animate__animated animate__bounceInDown"
+          data-wow-duration="2.5s" data-wow-delay="1s">Transforming IT Into <br> <span class="font-k-b"> An
                                         Accessible Digital Format </span></h2>
                             </div>
                         </div>
 
                         <!-- Cards Row -->
                         <div class="row why_section_slider">
-                            <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="col-lg-3 col-md-6 col-sm-12 ">
                                 <div class="card">
                                     <div class="card-volumeIcon">
                                         <img src="{{ asset('assets/img/volume-shape.png') }}" alt="Card image"

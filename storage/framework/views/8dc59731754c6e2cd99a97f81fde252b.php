@@ -38,7 +38,8 @@
             <header>
                 <nav class="navbar navbar-expand-lg bg-body-white">
                     <div class="container p-3">
-                        <a class="navbar-brand" href="#"><img src="<?php echo e(asset('assets/img/Riz-Logo-01.png')); ?>" alt></a>
+                        <a class="navbar-brand" href="#"><img src="<?php echo e(asset('assets/img/Riz-Logo-01.png')); ?>"
+                                alt></a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -78,46 +79,60 @@
 
             <main>
                 <section class="home_banner pt-5">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12 text-center">
-                                <img src="<?php echo e(asset('assets/img/background-image-2.png')); ?>" alt="Card image"
-                                    class="img-fluid main-bg-img mb-3">
-                                <h1 class="banner_text position-relative">
-                                    <span class="font1">Empowering Businesses</span> <br>
-                                    <span class="font2">Through Digital Transformation</span>
-                                </h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
 
-                                <p class="pt-2">At RIZ Technologies, we distinguish ourselves through our extensive
-                                    range of IT
-                                    solutions and
-                                    advanced technologies. Our exceptional offerings include cloud computing,
-                                    cybersecurity, data analytics, and digital transformation, all customized to support
-                                    business growth.</p>
+        <!-- Image animation -->
+        <img src="<?php echo e(asset('assets/img/background-image-2.png')); ?>" alt="Card image"
+          class="img-fluid main-bg-img mb-3 wow animate__animated animate__fadeInDown"
+          data-wow-duration="2s" data-wow-delay="0.5s">
 
+        <!-- Heading animation -->
+        <h1 class="banner_text position-relative wow animate__animated animate__bounceInDown"
+          data-wow-duration="2.5s" data-wow-delay="1s">
+          <span class="font1">Empowering Businesses</span> <br>
+          <span class="font2">Through Digital Transformation</span>
+        </h1>
 
-                                <div class=" d-flex flex-column flex-md-row justify-content-center gap-4 p-3">
-                                    <a href="#" class="btn main-btn">Get Started</a>
-                                    <a href="#" class="btn btn-outline-light-custom">Learn More</a>
-                                </div>
-                            </div>
+        <!-- Paragraph animation -->
+        <p class="pt-2 wow animate__animated animate__fadeInUp"
+          data-wow-duration="2s" data-wow-delay="1.5s">
+          At RIZ Technologies, we distinguish ourselves through our extensive
+          range of IT solutions and advanced technologies. Our exceptional offerings include cloud computing,
+          cybersecurity, data analytics, and digital transformation, all customized to support business growth.
+        </p>
 
-                        </div>
-                </section>
+        <!-- Buttons animation -->
+        <div class="flex-md-row justify-content-center gap-4 p-3">
+          <a href="#" class="btn main-btn wow animate__animated animate__zoomIn"
+            data-wow-duration="3s" data-wow-delay="2s">Get Started</a>
+          <a href="#" class="btn btn-outline-light-custom wow animate__animated animate__zoomIn"
+            data-wow-duration="2s" data-wow-delay="2.3s">Learn More</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
                 <section class="why_us pt-5 ">
-                    <div class="container bg-card">
+                    <div class="container bg-card wow animate__animated animate__backInLeft"
+          data-wow-duration="2.5s" data-wow-delay="1.5s">
                         <div class="row justify-content-center">
                             <!-- Section Heading -->
                             <div class="col-12 text-center mt-5 pt-5">
-                                <h3 class="text-white ">Why Us</h3>
-                                <h2 class="pt-3 font-k-l">Transforming IT Into <br> <span class="font-k-b"> An
+                                <h3 class="text-white wow animate__animated animate__backInDown"
+          data-wow-duration="2s" data-wow-delay="0.5s">Why Us</h3>
+                                <h2 class="pt-3 font-k-l wow animate__animated animate__bounceInDown"
+          data-wow-duration="2.5s" data-wow-delay="1s">Transforming IT Into <br> <span class="font-k-b"> An
                                         Accessible Digital Format </span></h2>
                             </div>
                         </div>
 
                         <!-- Cards Row -->
                         <div class="row why_section_slider">
-                            <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="col-lg-3 col-md-6 col-sm-12 ">
                                 <div class="card">
                                     <div class="card-volumeIcon">
                                         <img src="<?php echo e(asset('assets/img/volume-shape.png')); ?>" alt="Card image"
@@ -130,13 +145,13 @@
                                             viewBox="0 0 110.43 123.94" fill="#fff"
                                             style="enable-background:new 0 0 110.43 123.94" xml:space="preserve">
                                             <style type="text/css">
-                                            .st0 {
-                                                fill-rule: evenodd;
-                                                clip-rule: evenodd;
-                                                stroke: #000000;
-                                                stroke-width: 0.5;
-                                                stroke-miterlimit: 2.6131;
-                                            }
+                                                .st0 {
+                                                    fill-rule: evenodd;
+                                                    clip-rule: evenodd;
+                                                    stroke: #000000;
+                                                    stroke-width: 0.5;
+                                                    stroke-miterlimit: 2.6131;
+                                                }
                                             </style>
                                             <g>
                                                 <path class="st0"
@@ -144,7 +159,7 @@
                                                 </path>
                                             </g>
                                         </svg>
-                                        <h4 class="py-3">Cost- <br>Effectiveness</h4>
+                                        <h4>Cost- <br>Effectiveness</h4>
                                         <p>Our diverse selection of products comes with budget-friendly solutions, all
                                             designed to enhance your business operations.</p>
                                     </div>
@@ -156,7 +171,7 @@
                                         <img src="<?php echo e(asset('assets/img/volume-shape.png')); ?>" alt="Card image"
                                             class="img-fluid">
                                     </div>
-                                    <div class="card-body">
+                                    <div class="card-body d-flex flex-column">
                                         <svg width="50" height="50" viewBox="0 0 512 512" fill="#fff"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -178,7 +193,7 @@
                                                 d="M273.53 511.991H233.356C213.688 511.991 197.687 495.989 197.687 476.32C197.687 473.559 199.924 471.321 202.686 471.321H304.201C306.964 471.321 309.201 473.559 309.201 476.322C309.201 495.989 293.2 511.991 273.53 511.991ZM208.176 481.321C210.509 493.09 220.913 501.991 233.357 501.991H273.531C285.975 501.991 296.381 493.09 298.714 481.321H208.176Z">
                                             </path>
                                         </svg>
-                                        <h4 class="py-3">Innovative <br> Technology</h4>
+                                        <h4>Innovative <br> Technology</h4>
                                         <p>We stay current with
                                             market trends to ensure
                                             our products and systems remain innovative and
@@ -195,8 +210,8 @@
                                             class="img-fluid">
                                     </div>
                                     <div class="card-body">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="50" height="50"
-                                            viewBox="0 0 64 64" data-name="Layer 1" id="Layer_1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="50"
+                                            height="50" viewBox="0 0 64 64" data-name="Layer 1" id="Layer_1">
                                             <title></title>
                                             <path
                                                 d="M2,15.01978a9.76365,9.76365,0,0,0,.7074,2.10382l2.02087.18493a8.35412,8.35412,0,0,0,.8385,1.13373L5.1239,20.376a10.21966,10.21966,0,0,0,1.83179,1.311L8.69281,20.68a8.58722,8.58722,0,0,0,1.36877.42761L10.8681,23h2.26374l.80645-1.89233a8.58966,8.58966,0,0,0,1.36872-.42762l1.73718,1.007,1.83173-1.31091L18.433,18.44244a8.34469,8.34469,0,0,0,.83863-1.13372l2.02093-.18494A9.76526,9.76526,0,0,0,22,15.0199L20.47095,13.702V12.298L22,10.98016a9.76351,9.76351,0,0,0-.70734-2.10382l-2.02093-.18493a8.35724,8.35724,0,0,0-.8385-1.13373L18.8761,5.624a10.22051,10.22051,0,0,0-1.83179-1.311L15.30719,5.32a8.574,8.574,0,0,0-1.36877-.42761L13.1319,3H10.86816l-.80645,1.89233A8.58443,8.58443,0,0,0,8.693,5.32l-1.73718-1.007A10.21827,10.21827,0,0,0,5.12408,5.62384L5.567,7.55756a8.33923,8.33923,0,0,0-.83857,1.13372l-2.02093.18494A9.75883,9.75883,0,0,0,2,10.9801l1.529,1.31781V13.702ZM12,9a4,4,0,1,1-4,4A4,4,0,0,1,12,9Z">
@@ -239,7 +254,7 @@
                                                 d="M36.77148,10.4519l1.88086.68464a11.05087,11.05087,0,0,1,1.9043-3.33374L39.02148,6.51019A13.07675,13.07675,0,0,0,36.77148,10.4519Z">
                                             </path>
                                         </svg>
-                                        <h4 class="py-3">Industry <br>
+                                        <h4>Industry <br>
                                             Expertise</h4>
                                         <p>Our diverse selection of products comes with budget-friendly solutions, all
                                             designed to enhance your business operations.</p>
@@ -248,7 +263,10 @@
                             </div>
                             <div class="col-lg-3 col-md-6 col-sm-12">
                                 <div class="card">
-
+                                    <div class="card-volumeIcon highlight">
+                                        <img src="<?php echo e(asset('assets/img/volume-shape.png')); ?>" alt="Card image"
+                                            class="img-fluid">
+                                    </div>
                                     <div class="card-body">
                                         <svg xmlns="http://www.w3.org/2000/svg"
                                             xmlns:xlink="http://www.w3.org/1999/xlink" fill="#fff" height="50"
@@ -258,12 +276,13 @@
                                                 d="M30,3h-2H4H2C1.4,3,1,3.4,1,4s0.4,1,1,1h1v16c0,0.6,0.4,1,1,1h9.8l-5.5,6.3c-0.4,0.4-0.3,1,0.1,1.4C8.5,29.9,8.8,30,9,30  c0.3,0,0.6-0.1,0.8-0.3l5.2-6V28c0,0.6,0.4,1,1,1s1-0.4,1-1v-4.3l5.2,6c0.2,0.2,0.5,0.3,0.8,0.3c0.2,0,0.5-0.1,0.7-0.2  c0.4-0.4,0.5-1,0.1-1.4L18.2,22H28c0.6,0,1-0.4,1-1V5h1c0.6,0,1-0.4,1-1S30.6,3,30,3z M24.8,8.6l-4,6c-0.3,0.4-0.8,0.6-1.3,0.3  L15.8,13h-3.4l-3.7,3.7C8.5,16.9,8.3,17,8,17s-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4l4-4c0.2-0.2,0.4-0.3,0.7-0.3h4  c0.2,0,0.3,0,0.4,0.1l3.2,1.6l3.5-5.3c0.3-0.5,0.9-0.6,1.4-0.3C25,7.5,25.1,8.1,24.8,8.6z">
                                             </path>
                                         </svg>
-                                        <h4 class="py-3">Scalability</h4>
+                                        <h4 class="py-4">Scalability</h4>
                                         <p>Our diverse selection of products comes with budget-friendly solutions, all
                                             designed to enhance your business operations.</p>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </section>
@@ -331,8 +350,8 @@
                             <h2 class="text-dark font-k-l">Our <span class="font-k-b">Services</span></h2>
                         </div>
                         <div class="row justify-content-center mt-5 pt-5 slider">
-                            <div class="col-lg-4 d-flex">
-                                <div class="card px-0 mx-2 h-100">
+                            <div class="col-lg-4">
+                                <div class="card px-0 mx-2">
                                     <div class="card-inner bg-white">
                                         <div class="position-relative text-center">
                                             <img src="<?php echo e(asset('assets/img/services-img-1.png')); ?>" alt="Card image"
@@ -348,8 +367,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 d-flex">
-                                <div class="card px-0 mx-2 h-100">
+                            <div class="col-lg-4">
+                                <div class="card px-0 mx-2">
                                     <div class="card-inner bg-white">
                                         <div class="position-relative text-center">
                                             <img src="<?php echo e(asset('assets/img/services-img-2.png')); ?>" alt="Card image"
@@ -365,8 +384,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 d-flex">
-                                <div class="card px-0 mx-2 h-100">
+                            <div class="col-lg-4">
+                                <div class="card px-0 mx-2">
                                     <div class="card-inner bg-white">
                                         <div class="position-relative text-center">
                                             <img src="<?php echo e(asset('assets/img/services-img-3.png')); ?>" alt="Card image"
@@ -383,8 +402,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 d-flex">
-                                <div class="card px-0 mx-2 h-100">
+                            <div class="col-lg-4">
+                                <div class="card px-0 mx-2">
                                     <div class="card-inner bg-white">
                                         <div class="position-relative text-center">
                                             <img src="<?php echo e(asset('assets/img/services-img-3.png')); ?>" alt="Card image"
@@ -477,7 +496,7 @@
                             <div class="col-lg-4 partner_column2 position-relative">
                                 <div class="partner4">
                                     <img src="https://riztechnology.com/assets/images/partner/partner-7.png "
-                                        class="img-fluid" alt="partner">
+                                        class="img-fluid partner_img" alt="partner">
                                 </div>
                                 <div class="partner5">
                                     <img src="https://riztechnology.com/assets/images/partner/partner-8.png "
@@ -510,13 +529,18 @@
                         <div class="partner_word">
                         </div>
                         <div id="center" class="wrapper">
-                            <div class="item"> <img src="https://riztechnology.com/assets/images/partner/partner-1.png "
+                            <div class="item">
+                                <div> <img src="https://riztechnology.com/assets/images/partner/partner-1.png "
+                                        class="img-fluid" alt="partner"></div>
+                            </div>
+                            <div class="item"> <img
+                                    src="https://riztechnology.com/assets/images/partner/partner-2.png "
                                     class="img-fluid partner_img" alt="partner"></div>
-                            <div class="item"> <img src="https://riztechnology.com/assets/images/partner/partner-2.png "
+                            <div class="item"> <img
+                                    src="https://riztechnology.com/assets/images/partner/partner-3.png "
                                     class="img-fluid partner_img" alt="partner"></div>
-                            <div class="item"> <img src="https://riztechnology.com/assets/images/partner/partner-3.png "
-                                    class="img-fluid partner_img" alt="partner"></div>
-                            <div class="item"> <img src="https://riztechnology.com/assets/images/partner/partner-4.png "
+                            <div class="item"> <img
+                                    src="https://riztechnology.com/assets/images/partner/partner-4.png "
                                     class="img-fluid partner_img" alt="partner"></div>
                             <div class="item">
                                 <div class="">
@@ -545,7 +569,8 @@
                         </div>
 
                         <div class="controls selection-off">
-                            <div class="left selection-off" onclick="turnLeft()"><i class="fas fa-caret-left"></i></div>
+                            <div class="left selection-off" onclick="turnLeft()"><i class="fas fa-caret-left"></i>
+                            </div>
                             <div class="right selection-off" onclick="turnRight()"><i class="fas fa-caret-right"></i>
                             </div>
                         </div>
@@ -560,7 +585,8 @@
                         <div class="row g-5 pt-5">
                             <div class="col-lg-7">
                                 <div class="about_image">
-                                    <img src="<?php echo e(asset('assets/img/ceo-img.png')); ?>" alt="Card image" class="img-fluid">
+                                    <img src="<?php echo e(asset('assets/img/ceo-img.png')); ?>" alt="Card image"
+                                        class="img-fluid">
                                 </div>
                             </div>
                             <div class="col-lg-5">
@@ -891,16 +917,16 @@
                                             <div class="col-md-12 mb-3 wow animate__ animate__bounceInDown"
                                                 data-wow-delay="1.5"
                                                 style="visibility: visible; animation-name: bounceInDown;">
-                                                <input type="text" name="company_email" class="form-control emailVal"
-                                                    placeholder="Company Email">
+                                                <input type="text" name="company_email"
+                                                    class="form-control emailVal" placeholder="Company Email">
                                             </div>
 
 
                                             <div class="col-md-12 wow mb-3 animate__ animate__bounceInDown"
                                                 data-wow-delay="2.2"
                                                 style="visibility: visible; animation-name: bounceInDown;">
-                                                <textarea class="form-control " name="description" id="" cols="30"
-                                                    rows="10" placeholder="How Can We Help You?"></textarea>
+                                                <textarea class="form-control " name="description" id="" cols="30" rows="10"
+                                                    placeholder="How Can We Help You?"></textarea>
                                             </div>
                                             <div class="col-md-12  mb-3  wow animate__ text-white animate__bounceInDown"
                                                 data-wow-delay="1.5"
@@ -1056,8 +1082,8 @@
                             <div class="location seperator   position-relative   wow animate__ animate__fadeInUp animated"
                                 data-wow-duration="1.3s"
                                 style="visibility: visible; animation-duration: 1.3s; animation-name: fadeInUp;">
-                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="-5.0 -10.0 110.0 135.0"
-                                    width="100px" height="120px">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                    viewBox="-5.0 -10.0 110.0 135.0" width="100px" height="120px">
                                     <path
                                         d="m86.699 95.77c-0.80078-0.089843-1.5898-0.23047-2.3906-0.33984-3.5312-0.48828-7.0586-1-10.59-1.5-2.4688-0.35156-4.9414-0.69922-7.3984-1.0703-0.10937-0.019531-0.25-0.21094-0.26953-0.32812-0.039062-0.28125-0.03125-0.57812-0.011719-0.85938 0.019532-0.37109-0.12109-0.51953-0.5-0.51172-0.58984 0.019532-1.1797 0.011719-1.8398 0.011719v-1.1016c0-0.78125-0.011719-1.5703 0.011719-2.3516 0.011718-0.37891-0.12109-0.51953-0.5-0.5-0.46094 0.019531-0.92969 0.011719-1.4609 0.011719v-0.57812-11c0-0.60156-0.019531-0.60938-0.62109-0.60938h-1.2305v-0.57031c0-3.3789-0.011719-6.7617 0.011718-10.141 0-0.48047-0.17188-0.62109-0.60938-0.60156-0.41016 0.03125-0.82031 0.011719-1.2891 0.011719v-0.87891c0-4.0508-0.011719-8.1016-0.011719-12.148 0-0.62891-0.03125-0.66016-0.64062-0.66016h-1.1016v-0.60156-12.441c0-0.71875-0.039062-0.76172-0.75-0.76172h-1.0703v-0.58984-10.09c0-0.71094 0-0.71094-0.71094-0.71094h-0.62891v-0.60938c0-1.7305-0.03125-3.4609 0.011719-5.1914 0.019531-0.69922-0.10156-1.2891-0.62891-1.7617-0.28125-0.23828-0.33984-0.53906-0.32812-0.89844 0.011718-1.2812 0.011718-2.5586-0.011719-3.8398 0-0.17969-0.10156-0.37891-0.21094-0.53906-0.39844-0.64844-0.80859-1.2383-0.78125-2.0898 0.070312-1.8398 0.058593-3.6797 0-5.5195-0.011719-0.41016-0.33984-0.80078-0.55859-1.2891-0.48828 0.5-0.80859 0.87891-0.78906 1.5273 0.058594 1.7109-0.03125 3.4297 0.039063 5.1406 0.039062 0.87891-0.33984 1.5312-0.76953 2.1992-0.10937 0.17188-0.19922 0.39062-0.21094 0.60156-0.019531 1.3086 0.011719 2.6289-0.019531 3.9414-0.011719 0.26172-0.10938 0.57031-0.28125 0.76172-0.41016 0.44922-0.57031 0.92188-0.55859 1.5508 0.050781 1.8086 0.019531 3.6211 0.019531 5.4297 0 0.16016-0.011719 0.30859-0.019531 0.51172-0.30859 0-0.58984 0.019532-0.87109-0.011718-0.32812-0.039063-0.42969 0.10937-0.42188 0.41016v0.33984c0 3.4414-0.011719 6.8906-0.011719 10.328v0.39844c-0.51953-0.039062-1.0195-0.078125-1.5781-0.12109v13.859c-0.44922 0-0.83984 0.03125-1.2305-0.011719-0.41016-0.039062-0.51953 0.078126-0.51953 0.48828 0.011718 4.1992 0 8.3906 0 12.59v0.69922c-0.5 0-0.96875 0.03125-1.4414-0.011718-0.44922-0.03125-0.60156 0.089843-0.60156 0.57812 0.019531 3.4297 0.011719 6.8516 0.011719 10.281 0 0.12891-0.019532 0.25-0.03125 0.44141-0.46875 0-0.92969 0.019531-1.3906-0.011719-0.44141-0.03125-0.57812 0.12109-0.57812 0.57031 0.019531 3.6797 0.011718 7.3711 0.011718 11.051v0.55859c-0.58984 0-1.1289 0.011718-1.6602-0.011719-0.33984-0.011719-0.44922 0.12109-0.44922 0.44922 0.011719 1.1484 0 2.3008 0 3.5117-0.64062 0-1.2383 0.03125-1.8398-0.011718-0.44141-0.03125-0.57031 0.14844-0.53906 0.55859 0.019531 0.35156 0 0.69922 0 1.1602-0.28906-0.078126-0.51172-0.14063-0.73828-0.19141-0.12109-0.019531-0.25-0.03125-0.37109-0.011719-3.0391 0.44141-6.0703 0.89063-9.1094 1.3398-3.3398 0.48828-6.6914 0.89844-10.012 1.5-0.48047 0.089844-0.96094 0.14844-1.4414 0.19922-0.03125 0.19141-0.12109 0.71094-0.19922 1.1914h74.039c-0.14844-0.36328-0.24609-0.74609-0.32812-1.125zm-22.027-3.3984c0.011719 0.12109 0.03125 0.25 0.039063 0.42188h-2.9883c0.011719-0.14844 0.011719-0.28125 0.019532-0.42188zm-2.2734-3.9219v2.6602c0 0.5-0.37891 0.28125-0.67188 0.35938v-2.3984h-0.67969v3.7109h-1.2188v-4.3398h2.5703zm-1.9375-12.238v0.57812c0 3.3594-0.011719 6.7188 0.011718 10.078 0 0.46875-0.12109 0.69922-0.69141 0.62109v-10.41c-0.26172 0.019531-0.46875 0.039063-0.73047 0.050781v15.648l-1.0508 0.003906v-16.57zm-1.9414-11.289v10.25c-0.17188 0.03125-0.33984 0.070313-0.55859 0.10938v-9.4297c-0.26172 0.019532-0.46094 0.03125-0.69922 0.050782v26.879h-1.2617v-27.859zm-2.5312-0.91016v-2.4297h0.64844v2.3398c-0.21484 0.027344-0.41797 0.058594-0.64844 0.089844zm0.68359-12.75v9.0508c-0.21875 0.011719-0.44141 0.019531-0.71094 0.039062v-8.5703c-0.26953 0.011719-0.48828 0.019531-0.73828 0.03125v8.5586h-1.1602v-9.1094zm-1.4922 10.438v31.102h-1.1211v-31.102zm-1.6211-24.277c0.42969 0 0.85938-0.050781 1.3516-0.078125 0.011719 0.21094 0.03125 0.39844 0.03125 0.57812 0 3.9102 0 7.8086-0.011718 11.719 0 0.69141 0 0.69141-0.75 0.66016v-12.242c-0.35156 0.058594-0.60938 0.10938-0.89844 0.16016v22.191h-0.85938v-23.289h0.64844c-0.011718 0.03125-0.019531 0.070312-0.03125 0.10156 0.17969 0.066406 0.35156 0.19922 0.51953 0.19922zm-0.28906 24.316v31.02h-0.83984v-31.02zm-0.16016-35.75v9.8398c-0.19922 0.011719-0.42969 0.03125-0.71875 0.050781v-0.60156c0-1.9805 0.011719-3.9688 0.011719-5.9492 0-1.1211-0.30859-1.4492-1.4297-1.5312-0.089844-0.011719-0.19141-0.019531-0.30859-0.03125v-1.7812zm-3.5703 34.441v-23.281h2.0703v23.281zm2.0703 1.332v30.988h-2.0703v-30.988zm-2.0703-25.902c-0.011718-0.19141-0.03125-0.35938-0.03125-0.53125-0.011718-1.9805-0.011718-3.9609-0.011718-5.9414 0-0.62109 0.070312-0.69141 0.69141-0.69141 0.30078 0 0.60938 0 0.91016 0.011719 0.33984 0.011719 0.53906 0.19922 0.53906 0.55078v6.6094l-2.0977 0.003906zm1.0625-11.121v-4.6406c1.3594 0.87109 1.3594 0.87891 1.3594 2.5117v2.1289zm-1.0508-6.6484c0.32031-0.28125 0.39062-0.60938 0.37891-1.0195-0.019532-1.1992 0.03125-2.3984-0.019532-3.6016-0.019531-0.60156 0.23047-1.0195 0.55859-1.5117 0.30078 0.44141 0.55859 0.80859 0.53906 1.3594-0.039062 1.2305 0 2.4688-0.019531 3.6992-0.011719 0.42969 0.089844 0.78125 0.42969 1.0586 0.5 0.42188 0.69922 0.92969 0.48047 1.6289-0.35156-0.23828-0.71094-0.44922-1.0508-0.71094-0.28906-0.21875-0.51953-0.28125-0.83984-0.050782-0.28125 0.19922-0.60937 0.33984-0.91016 0.5-0.20703-0.58203 0.050782-1 0.45312-1.3516zm-0.12109 2.3789c0.25-0.10156 0.46875-0.26953 0.73828-0.39844-0.44922 0.55859-0.26172 1.1992-0.26953 1.8203-0.019532 0.94141-0.011719 1.8789-0.011719 2.8398h-0.85938v-0.78125c0-0.92969 0.019531-1.8594-0.011719-2.7891-0.015625-0.33984 0.085937-0.55078 0.41406-0.69141zm-1.5312 5.5117h1.9883c0 0.55078 0.011719 1.0781-0.011719 1.6211 0 0.078126-0.14062 0.19141-0.23828 0.23047-0.73047 0.26172-0.87891 0.46094-0.87891 1.2188v6.7617l-0.85937-0.003906zm-1.707 11.34c0.42969 0.039063 0.85156 0.078126 1.2695 0.12891 0.28906 0.039062 0.48828 0.011719 0.41016-0.35938h0.83984v23.32h-1.1484l-0.003906-22.359h-0.73828v12.281c-0.23828-0.050781-0.42969-0.078125-0.64062-0.12891v-12.883zm2.5391 24.43v31.031h-1.1406v-31.031zm-4.2695-10.512h2.3594v9.1406h-0.87891v-8.5586h-0.73047v8.5195h-0.75zm2.3398 10.441v31.121h-0.87109v-31.121zm-1.6289-0.078126v2.4492c-0.75-0.10938-0.75-0.10938-0.75-0.80078v-1.6484zm-2.5625 3.4688c0-0.03125 0.011719-0.058593 0.03125-0.14062h2.5312v27.859h-1.3008v-26.867h-0.73828v9.3789c-0.32031-0.039062-0.53906-0.050781-0.53906-0.42188 0.015625-3.2773 0.007812-6.5391 0.015625-9.8086zm-4.1289 23.32h2.6094c0-0.44141 0.21094-0.89844-0.48047-0.92188v-11.258h2.4609v16.578h-1.1914v-15.66h-0.71094v15.66h-1.5v-3.7305h-0.75v2.3711c-0.058594 0.019531-0.12109 0.039062-0.17188 0.070312-0.078125-0.12109-0.23828-0.23828-0.23828-0.37109-0.039062-0.89062-0.027343-1.7773-0.027343-2.7383zm-2.3008 4c0.82812 0 1.6602-0.011719 2.4883 0.011719 0.10938 0 0.21094 0.17188 0.30859 0.26953-0.03125 0.050781-0.058593 0.089844-0.089843 0.14062-0.83984 0-1.6914 0.011719-2.5312-0.011719-0.10938 0-0.21094-0.19922-0.30859-0.30078 0.042969-0.039062 0.09375-0.078125 0.13281-0.10938zm-15.102 3.4688-0.011719-0.078125c2.0898-0.28906 4.1719-0.58984 6.2617-0.89062 1.8789-0.26953 3.7617-0.55859 5.6484-0.80859 0.32031-0.039062 0.66016 0.019531 1 0.019531 10.41 0 20.809-0.019531 31.219 0.019532 1.4609 0.011718 2.9219 0.30859 4.3789 0.51172 2.5195 0.33984 5.0391 0.69141 7.5508 1.0391 0.25 0.03125 0.48828 0.089844 0.73047 0.19141z">
                                     </path>
@@ -1102,7 +1128,8 @@
                                 <!-- Grid column -->
                                 <div class="col-lg-4 pe-lg-5">
                                     <!-- Content -->
-                                    <img src="https://riztechnology.com/assets/images/logo/footerLogo.png" alt="">
+                                    <img src="https://riztechnology.com/assets/images/logo/footerLogo.png"
+                                        alt="">
                                     <p class="py-3">
                                         Riz Technology is wholeheartedly committed to establishing a distinguished
                                         reputation as a
@@ -1142,7 +1169,8 @@
                                         </a>
                                     </p>
                                     <p class="mt-3">
-                                        <a href="https://riztechnology.com/services/sla-management" class="text-reset ">
+                                        <a href="https://riztechnology.com/services/sla-management"
+                                            class="text-reset ">
                                             SLA Management
                                         </a>
                                     </p>
@@ -1325,171 +1353,212 @@
     <script src="./assets/js/smooth.min.js"></script>
     <script src="./assets/js/script.js"></script>
     <script type="text/javascript">
-    $('.slider').slick({
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        prevArrow: '<button type="button" class="slick-prev"></button>',
-        nextArrow: '<button type="button" class="slick-next"></button>',
-        responsive: [{
+        $('.slider').slick({
+            dots: false, // default (desktop)
+            infinite: true,
+            speed: 500,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            prevArrow: '<button type="button" class="slick-prev"></button>',
+            nextArrow: '<button type="button" class="slick-next"></button>',
+            responsive: [{
+                    breakpoint: 1366, // iPad Pro landscape max width
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        dots: true,
+                        arrows: false
+                    }
+                },
+                {
+                    breakpoint: 1024, // iPad Pro portrait / tablets
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        dots: true,
+                        arrows: false
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        dots: true, // ✅ enable dots
+                        arrows: false
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        dots: true, // ✅ enable dots
+                        arrows: false
+                    }
+                }
+            ]
+        });
 
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: false,
-                    arrow: false
+        $('.why_section_slider').slick({
+            dots: false,
+            infinite: true,
+            arrows: false,
+            speed: 500,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            responsive: [{
+                    breakpoint: 1366, // iPad Pro landscape max width
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        dots: true,
+                        arrows: false
+                    }
+                },
+                {
+                    breakpoint: 1024, // iPad Pro portrait / tablets
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        dots: true,
+                        arrows: false
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        dots: true,
+                        arrows: false
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        dots: true,
+                        arrows: false
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        dots: true,
+                        arrows: false
+                    }
                 }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+        $('.process_slider').slick({
+            dots: false,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+
+            responsive: [{
+
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: false,
+                        arrow: false
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
                 }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+        $(document).ready(function() {
+            var $items = $('.item');
+            var itemsId = $items.toArray();
+            var sectionDeg = 360 / itemsId.length;
+            var radianSectionDeg = (sectionDeg * Math.PI * 2) / 360;
+            var radiusLength = 170;
+
+            function updatePositions() {
+                $.each(itemsId, function(i, item) {
+                    var itemWidth = $(item).outerWidth(); // Get dynamic width
+                    var itemHeight = $(item).outerHeight(); // Get dynamic height
+                    $(item).css({
+                        top: radiusLength * Math.sin(radianSectionDeg * i - Math.PI / 2) -
+                            itemHeight / 2 + 'px',
+                        left: radiusLength * Math.cos(radianSectionDeg * i - Math.PI / 2) -
+                            itemWidth / 2 + 'px',
+                    });
+                });
             }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
-        ]
-    });
-    $('.why_section_slider').slick({
-        dots: false,
-        infinite: true,
-        arrows: false,
-        speed: 500,
-        slidesToShow: 4,
-        slidesToScroll: 1,
 
-        responsive: [{
+            // Initial position setup
+            updatePositions();
 
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: false,
-                    arrow: false
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
+            var rotation = 0;
+            var $center = $('#center');
+
+            function turnLeft() {
+                rotation += radianSectionDeg;
+                $center.css('transform', 'rotate(' + rotation + 'rad)');
+                $items.each(function() {
+                    $(this).css('transform', 'rotate(' + -rotation + 'rad)');
+                });
             }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
-        ]
-    });
-    $('.process_slider').slick({
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 1,
 
-        responsive: [{
-
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: false,
-                    arrow: false
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
+            function turnRight() {
+                rotation -= radianSectionDeg;
+                $center.css('transform', 'rotate(' + rotation + 'rad)');
+                $items.each(function() {
+                    $(this).css('transform', 'rotate(' + -rotation + 'rad)');
+                });
             }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
-        ]
-    });
-    $(document).ready(function() {
 
-        var htmlCollection = document.getElementsByClassName('item');
-        //getting elements by class name into an HTMLCollection
+            $('.left').on('click', function() {
+                turnLeft();
+            });
 
-        var itemsId = Array.from(htmlCollection);
-        //turning the HTMLcollection into an array for easier manipulation of the elements
+            $('.right').on('click', function() {
+                turnRight();
+            });
 
-        var sectionDeg = 360 / itemsId.length;
-        //sectioning the (imaginary) circle into a number of section equalling the number of items
-        //it can be used on more elements
+            // Auto-rotate every 2 seconds
+            setInterval(function() {
+                turnRight();
+            }, 2000);
 
-        var radianSectionDeg = sectionDeg * Math.PI * 2 / 360;
-        //transforming from degrees into radians
-
-        var radiusLength = 200;
-        //the distance between the center of the circle to the element
-        //edit this number to increase/decrease that distance
-
-        for (var i = 0; i < itemsId.length; i++) {
-            itemsId[i].style.top = radiusLength * Math.sin(radianSectionDeg * i - 1.5708) - 50 + 'px';
-            itemsId[i].style.left = radiusLength * Math.cos(radianSectionDeg * i - 1.5708) - 50 + 'px';
-        }
-        //setting the top and left positions of each elemenent based on the following formula:
-        //(x, y) = (r * cos(θ), r * sin(θ)) like this:
-        //x = (r * cos(θ) => left
-        //y = r * sin(θ) => top
-        //1.5708 is a radian used put the first element on top - basically 90deg
-
-        var rotation = 0;
-        var center = document.getElementById('center');
-        //we are going to rotate the wrapper of the elements
-
-        window.turnLeft = function() {
-            rotation = rotation + radianSectionDeg;
-            center.style.transform = 'rotate(' + rotation + 'rad)';
-            for (var i = 0; i < itemsId.length; i++) {
-                itemsId[i].style.transform = 'rotate(' + -rotation + 'rad)';
-            }
-        }
-
-        window.turnRight = function() {
-            rotation = rotation - radianSectionDeg;
-            center.style.transform = 'rotate(' + rotation + 'rad)';
-            for (var i = 0; i < itemsId.length; i++) {
-                itemsId[i].style.transform = 'rotate(' + -rotation + 'rad)';
-            }
-        }
-
-    });
+            // Recalculate positions on window resize to handle responsiveness
+            $(window).on('resize', updatePositions);
+        });
     </script>
 
 </body>
 
-</html><?php /**PATH C:\Users\User\Documents\GitHub\riz-technology\resources\views/index.blade.php ENDPATH**/ ?>
+</html>
+<?php /**PATH C:\Users\User\Documents\GitHub\riz-technology\resources\views/index.blade.php ENDPATH**/ ?>
