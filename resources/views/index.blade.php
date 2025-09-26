@@ -78,54 +78,53 @@
             </header>
 
             <main>
-                <section class="home_banner pt-5">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 text-center">
+               <section class="home_banner pt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <!-- Image -->
+                <img src="{{ asset('storage/' . $banner->image) }}" alt="Banner Image"
+                    class="img-fluid main-bg-img mb-3 wow animate__animated animate__fadeInDown"
+                    data-wow-duration="2s" data-wow-delay="1s">
 
-        <!-- Image animation -->
-        <img src="{{ asset('assets/img/background-image-2.png') }}" alt="Card image"
-          class="img-fluid main-bg-img mb-3 wow animate__animated animate__fadeInDown"
-          data-wow-duration="2s" data-wow-delay="0.5s">
+                <!-- Heading -->
+                <h1 class="banner_text position-relative wow animate__animated animate__bounceInDown"
+                    data-wow-duration="1.5s" data-wow-delay="0.5s">
+                    <span class="font1">{{ $banner->heading_line1 }}</span> <br>
+                    <span class="font2">{{ $banner->heading_line2 }}</span>
+                </h1>
 
-        <!-- Heading animation -->
-        <h1 class="banner_text position-relative wow animate__animated animate__bounceInDown"
-          data-wow-duration="2.5s" data-wow-delay="1s">
-          <span class="font1">Empowering Businesses</span> <br>
-          <span class="font2">Through Digital Transformation</span>
-        </h1>
+                <!-- Paragraph -->
+                <p class="pt-2 wow animate__animated animate__bounceInDown"
+                    data-wow-duration="1.5s" data-wow-delay="0.5s">
+                    {{ $banner->description }}
+                </p>
 
-        <!-- Paragraph animation -->
-        <p class="pt-2 wow animate__animated animate__fadeInUp"
-          data-wow-duration="2s" data-wow-delay="1.5s">
-          At RIZ Technologies, we distinguish ourselves through our extensive
-          range of IT solutions and advanced technologies. Our exceptional offerings include cloud computing,
-          cybersecurity, data analytics, and digital transformation, all customized to support business growth.
-        </p>
-
-        <!-- Buttons animation -->
-        <div class="flex-md-row justify-content-center gap-4 p-3">
-          <a href="#" class="btn main-btn wow animate__animated animate__zoomIn"
-            data-wow-duration="3s" data-wow-delay="2s">Get Started</a>
-          <a href="#" class="btn btn-outline-light-custom wow animate__animated animate__zoomIn"
-            data-wow-duration="2s" data-wow-delay="2.3s">Learn More</a>
+                <!-- Buttons -->
+                <div class="flex-md-row justify-content-center gap-4 p-3">
+                    <a href="{{ $banner->button1_link }}" class="btn main-btn wow animate__animated animate__zoomIn"
+                        data-wow-duration="3s" data-wow-delay="3s">{{ $banner->button1_text }}</a>
+                    <a href="{{ $banner->button2_link }}"
+                        class="btn btn-outline-light-custom wow animate__animated animate__zoomIn"
+                        data-wow-duration="3s" data-wow-delay="3s">{{ $banner->button2_text }}</a>
+                </div>
+            </div>
         </div>
-
-      </div>
     </div>
-  </div>
 </section>
 
+
                 <section class="why_us pt-5 ">
-                    <div class="container bg-card wow animate__animated animate__backInLeft"
-          data-wow-duration="2.5s" data-wow-delay="1.5s">
+                    <div class="container bg-card wow animate__animated animate__backInLeft" data-wow-duration="2s"
+                        data-wow-delay="2s">
                         <div class="row justify-content-center">
                             <!-- Section Heading -->
                             <div class="col-12 text-center mt-5 pt-5">
-                                <h3 class="text-white wow animate__animated animate__backInDown"
-          data-wow-duration="2s" data-wow-delay="0.5s">Why Us</h3>
-                                <h2 class="pt-3 font-k-l wow animate__animated animate__bounceInDown"
-          data-wow-duration="2.5s" data-wow-delay="1s">Transforming IT Into <br> <span class="font-k-b"> An
+                                <h3 class="text-white wow animate__animated animate__slideInDown"
+                                    data-wow-duration="2s" data-wow-delay="2s">Why Us</h3>
+                                <h2 class="pt-3 font-k-l wow animate__animated animate__slideInDown"
+                                    data-wow-duration="2s" data-wow-delay="2s">Transforming IT Into <br> <span
+                                        class="font-k-b"> An
                                         Accessible Digital Format </span></h2>
                             </div>
                         </div>
@@ -133,8 +132,8 @@
                         <!-- Cards Row -->
                         <div class="row why_section_slider">
                             <div class="col-lg-3 col-md-6 col-sm-12 ">
-                                <div class="card">
-                                    <div class="card-volumeIcon">
+                                <div class="card ">
+                                    <div class="card-volumeIcon d-none d-md-block">
                                         <img src="{{ asset('assets/img/volume-shape.png') }}" alt="Card image"
                                             class="img-fluid">
                                     </div>
@@ -167,7 +166,7 @@
                             </div>
                             <div class="col-lg-3 col-md-6 col-sm-12">
                                 <div class="card">
-                                    <div class="card-volumeIcon highlight">
+                                    <div class="card-volumeIcon highlight d-none d-md-block">
                                         <img src="{{ asset('assets/img/volume-shape.png') }}" alt="Card image"
                                             class="img-fluid">
                                     </div>
@@ -205,7 +204,7 @@
                             </div>
                             <div class="col-lg-3 col-md-6 col-sm-12">
                                 <div class="card">
-                                    <div class="card-volumeIcon highlight">
+                                    <div class="card-volumeIcon highlight d-none d-md-block">
                                         <img src="{{ asset('assets/img/volume-shape.png') }}" alt="Card image"
                                             class="img-fluid">
                                     </div>
@@ -263,7 +262,7 @@
                             </div>
                             <div class="col-lg-3 col-md-6 col-sm-12">
                                 <div class="card">
-                                    <div class="card-volumeIcon highlight">
+                                    <div class="card-volumeIcon highlight d-none d-md-block">
                                         <img src="{{ asset('assets/img/volume-shape.png') }}" alt="Card image"
                                             class="img-fluid">
                                     </div>
@@ -286,20 +285,21 @@
                         </div>
                     </div>
                 </section>
-
-
                 <section class="about_section py-5 mt-5 position-relative">
                     <div class="container">
                         <div class="row g-5">
-                            <div class="col-lg-6 aboutImage position-relative">
+                            <div class="col-lg-6 aboutImage position-relative wow animate__animated animate__fadeIn"
+                                data-wow-duration="1.5s" data-wow-delay="0.5s">
                                 <img src="{{ asset('assets/img/about-img.png') }}" alt="Card image"
                                     class="img-fluid p-3" style="border: 3px solid #6e05ff; border-radius: 8px; ">
                             </div>
-                            <div class="col-lg-6 px-4">
+                            <div class="col-lg-6 px-5 wow animate__animated animate__fadeInDown"
+                                    data-wow-duration="2.5s" data-wow-delay="1.5s">
                                 <h3 class="text-purple font-k-l">About Us</h3>
                                 <h2 class="text-dark font-k-l">Committed To</h2>
-                                <h2 class="text-dark font-k-b ">Providing Quality</h2>
-                                <p class="py-3">
+                                <h2 class="text-dark font-k-b">Providing Quality</h2>
+                                <p class="py-3 wow animate__animated animate__fadeInDown" data-wow-duration="2.5s"
+                                    data-wow-delay="1.5s">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                                     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -342,27 +342,32 @@
                         </div>
                     </div>
                 </section>
-
-
                 <section class="services_section py-5">
                     <div class="container pt-5">
                         <div class=" text-center">
-                            <h2 class="text-dark font-k-l">Our <span class="font-k-b">Services</span></h2>
+                            <h2 class="text-dark font-k-l wow animate__animated animate__fadeInDown"
+                                data-wow-duration="1.5s" data-wow-delay="0.5s">Our <span
+                                    class="font-k-b">Services</span></h2>
                         </div>
                         <div class="row justify-content-center mt-5 pt-5 slider">
                             <div class="col-lg-4">
                                 <div class="card px-0 mx-2">
                                     <div class="card-inner bg-white">
-                                        <div class="position-relative text-center">
+                                        <div class="position-relative text-center wow animate__animated animate__fadeIn"
+                                            data-wow-duration="1.5s" data-wow-delay="0.5s">
                                             <img src="{{ asset('assets/img/services-img-1.png') }}" alt="Card image"
                                                 class="card-img-top px-4 shadow-sm rounded-3">
                                         </div>
                                         <div class="card-body p-3">
-                                            <h3 class="text-dark font-k-b">Managed Services</h3>
-                                            <p>Free up your internal resources to focus on the business by letting us
+                                            <h3 class="text-dark font-k-b wow animate__animated animate__fadeIn"
+                                                data-wow-duration="1.5s" data-wow-delay="0.5s">Managed Services</h3>
+                                            <p class="wow animate__animated animate__fadeIn" data-wow-duration="1.5s"
+                                                data-wow-delay="0.5s">Free up your internal resources to focus on the
+                                                business by letting us
                                                 handle day to day support services, management, and monitoring of your
                                                 IT.</p>
-                                            <a href="#">Read More</a>
+                                            <a class="wow animate__animated animate__fadeIn" data-wow-duration="1.5s"
+                                                data-wow-delay="0.5s" href="#">Read More</a>
                                         </div>
                                     </div>
                                 </div>
@@ -370,16 +375,21 @@
                             <div class="col-lg-4">
                                 <div class="card px-0 mx-2">
                                     <div class="card-inner bg-white">
-                                        <div class="position-relative text-center">
+                                        <div class="position-relative text-center wow animate__animated animate__fadeIn"
+                                            data-wow-duration="1.5s" data-wow-delay="0.5s">
                                             <img src="{{ asset('assets/img/services-img-2.png') }}" alt="Card image"
                                                 class="card-img-top px-4 shadow-sm rounded-3">
                                         </div>
                                         <div class="card-body p-3">
-                                            <h3 class="text-dark font-k-b">Managed Sources</h3>
-                                            <p>Free up your internal resources to focus on the business by letting us
+                                            <h3 class="text-dark font-k-b wow animate__animated animate__fadeIn"
+                                                data-wow-duration="1.5s" data-wow-delay="0.5s">Managed Sources</h3>
+                                            <p class="wow animate__animated animate__fadeIn" data-wow-duration="1.5s"
+                                                data-wow-delay="0.5s">Free up your internal resources to focus on the
+                                                business by letting us
                                                 handle day to day support services, management, and monitoring of your
                                                 IT.</p>
-                                            <a href="#">Read More</a>
+                                            <a class="wow animate__animated animate__fadeIn" data-wow-duration="1.5s"
+                                                data-wow-delay="0.5s" href="#">Read More</a>
                                         </div>
                                     </div>
                                 </div>
@@ -387,17 +397,22 @@
                             <div class="col-lg-4">
                                 <div class="card px-0 mx-2">
                                     <div class="card-inner bg-white">
-                                        <div class="position-relative text-center">
+                                        <div class="position-relative text-center wow animate__animated animate__fadeIn"
+                                            data-wow-duration="1.5s" data-wow-delay="0.5s">
                                             <img src="{{ asset('assets/img/services-img-3.png') }}" alt="Card image"
                                                 class="card-img-top px-4 shadow-sm rounded-3">
                                         </div>
                                         <div class="card-body p-3">
-                                            <h3 class="text-dark font-k-b">Cyber Security</h3>
-                                            <p>Our experts can identify vulnerabilities, assess risks,
+                                            <h3 class="text-dark font-k-b wow animate__animated animate__fadeIn"
+                                                data-wow-duration="1.5s" data-wow-delay="0.5s">Cyber Security</h3>
+                                            <p class="wow animate__animated animate__fadeIn" data-wow-duration="1.5s"
+                                                data-wow-delay="0.5s">Our experts can identify vulnerabilities, assess
+                                                risks,
                                                 and implement
                                                 robust
                                                 security measures to safeguard your systems and data.</p>
-                                            <a href="#">Read More</a>
+                                            <a class="wow animate__animated animate__fadeIn" data-wow-duration="1.5s"
+                                                data-wow-delay="0.5s" href="#">Read More</a>
                                         </div>
                                     </div>
                                 </div>
@@ -410,19 +425,24 @@
                                                 class="card-img-top px-4 shadow-sm rounded-3">
                                         </div>
                                         <div class="card-body p-3 ">
-                                            <h3 class="text-dark font-k-b">Cyber Security</h3>
+                                            <h3 class="text-dark font-k-b wow animate__animated animate__fadeIn"
+                                                data-wow-duration="1.5s" data-wow-delay="0.5s">Cyber Security</h3>
 
-                                            <p>Our experts can identify vulnerabilities, assess risks,
+                                            <p class="wow animate__animated animate__fadeIn" data-wow-duration="1.5s"
+                                                data-wow-delay="0.5s">Our experts can identify vulnerabilities, assess
+                                                risks,
                                                 and implement
                                                 robust
                                                 security measures to safeguard your systems and data.</p>
-                                            <a href="#">Read More</a>
+                                            <a class="wow animate__animated animate__fadeIn" data-wow-duration="1.5s"
+                                                data-wow-delay="0.5s" href="#">Read More</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="d-flex justify-content-center pt-5 ">
+                        <div class="d-flex justify-content-center pt-5 wow animate__animated animate__fadeIn"
+                            data-wow-duration="1.5s" data-wow-delay="0.5s">
                             <button class="btn main-btn">View All</button>
                         </div>
                     </div>
@@ -431,19 +451,24 @@
                     <div class="card bg-card">
                         <div class="card-body">
                             <div class="row align-items-center text-white g-4 position-relative">
-                                <div class="col-md-3 text-start text-md-start">
-                                    <h2 class="text-white font-k-l">Our <span class="font-k-b">Process</span></h2>
+                                <div class="col-lg-3 col-md-4 text-start text-md-start">
+                                    <h2 class="text-white font-k-l wow animate__animated animate__fadeInDown"
+                                        data-wow-duration="1.5s" data-wow-delay="0.5s">Our <span
+                                            class="font-k-b">Process</span></h2>
                                     <div class="separator"></div>
                                 </div>
-                                <div class="col-md-9 text-start text-md-start ps-4">
-                                    <p>Our process of providing solutions for IT Technologies is straightforward and
+                                <div class="col-lg-9 col-md-8 text-start text-md-start ps-4">
+                                    <p class="wow animate__animated animate__bounceIn" data-wow-duration="1.5s"
+                                        data-wow-delay="0.5s">Our process of providing solutions for IT Technologies is
+                                        straightforward and
                                         transparent. We start with a thorough analysis of your business needs and then
                                         design a customized solution. We implement it with minimal disruption to your
                                         operations and provide ongoing support and maintenance.</p>
                                 </div>
                             </div>
                             <div class="row wave-row">
-                                <div class="col-md-4 text-start text-md-start position-relative">
+                                <div class="col-md-4 text-start text-md-start position-relative wow animate__animated animate__bounceIn"
+                                    data-wow-duration="1.5s" data-wow-delay="0.5s">
                                     <span class="process_number fs-4"> 01 </span>
                                     <h4 class="text-white">Analysis</h4>
                                     <p class="text-white">We analyze data and trends to provide actionable
@@ -451,14 +476,16 @@
                                         and uncover growth opportunities, driving business success and
                                         innovation.</p>
                                 </div>
-                                <div class="col-md-4 text-start text-md-start pt-5 position-relative">
+                                <div class="col-md-4 text-start text-md-start pt-5 position-relative wow animate__animated animate__bounceIn"
+                                    data-wow-duration="1.5s" data-wow-delay="0.5s">
                                     <span class="process_number fs-4 "> 02 </span>
                                     <h4 class="text-white">Solution</h4>
                                     <p class="text-white">We provide customized solutions to address your
                                         unique business challenges as per your requirements, enhancing
                                         efficiency, driving growth, and fostering innovation.</p>
                                 </div>
-                                <div class="col-md-4 text-start text-md-start pt-4 position-relative">
+                                <div class="col-md-4 text-start text-md-start pt-4 position-relative wow animate__animated animate__bounceIn"
+                                    data-wow-duration="1.5s" data-wow-delay="0.5s">
                                     <span class="process_number fs-4 "> 03 </span>
                                     <h4 class="text-white">Implement</h4>
                                     <p class="text-white">We deliver seamless implementation of tailored
@@ -473,8 +500,12 @@
                 </section>
                 <section class="partner_section my-5 partnerDesk">
                     <div class=" text-center">
-                        <h2 class="text-dark font-k-l">Our <span class="font-k-b">Partners</span></h2>
-                        <p class="px-5">Our credibility and professionalism are further enhanced by our reliable
+                        <h2 class="text-dark font-k-l wow animate__animated animate__fadeInDown"
+                            data-wow-duration="1.5s" data-wow-delay="0.5s">Our <span class="font-k-b">Partners</span>
+                        </h2>
+                        <p class="px-5 wow animate__animated animate__fadeInDown" data-wow-duration="1.5s"
+                            data-wow-delay="0.5s">Our credibility and professionalism are further enhanced by our
+                            reliable
                             partnerships <br> with several well-known brands and companies.</p>
                     </div>
                     <div class="container">
@@ -495,7 +526,7 @@
                             </div>
                             <div class="col-lg-4 partner_column2 position-relative">
                                 <div class="partner4">
-                                    <img src="https://riztechnology.com/assets/images/partner/partner-7.png "
+                                    <img src="{{ asset('assets/img/partner-7.png') }}"
                                         class="img-fluid partner_img" alt="partner">
                                 </div>
                                 <div class="partner5">
@@ -521,8 +552,12 @@
 
                 <section class="partner_section my-5 partnerMob">
                     <div class=" text-center">
-                        <h2 class="text-dark font-k-l">Our <span class="font-k-b">Partners</span></h2>
-                        <p class="px-5">Our credibility and professionalism are further enhanced by our reliable
+                        <h2 class="text-dark font-k-l wow animate__animated animate__bounceIn"
+                            data-wow-duration="1.5s" data-wow-delay="0.5s">Our <span class="font-k-b">Partners</span>
+                        </h2>
+                        <p class="px-5 wow animate__animated animate__bounceIn" data-wow-duration="1.5s"
+                            data-wow-delay="0.5s">Our credibility and professionalism are further enhanced by our
+                            reliable
                             partnerships <br> with several well-known brands and companies.</p>
                     </div>
                     <div class="partnerDiv">
@@ -544,7 +579,7 @@
                                     class="img-fluid partner_img" alt="partner"></div>
                             <div class="item">
                                 <div class="">
-                                    <img src="https://riztechnology.com/assets/images/partner/partner-7.png "
+                                    <img src="{{ asset('assets/img/partner-7.png') }}"
                                         class="img-fluid" alt="partner">
                                 </div>
                             </div>
@@ -584,13 +619,15 @@
                     <div class="container">
                         <div class="row g-5 pt-5">
                             <div class="col-lg-7">
-                                <div class="about_image">
+                                <div class="about_image wow animate__animated animate__bounceIn"
+                                    data-wow-duration="1.5s" data-wow-delay="0.5s">
                                     <img src="{{ asset('assets/img/ceo-img.png') }}" alt="Card image"
                                         class="img-fluid">
                                 </div>
                             </div>
-                            <div class="col-lg-5">
-                                <h3 class="text-purple font-k-l py-2">CEO Message</h3>
+                            <div class="col-lg-5 wow animate__animated animate__bounceIn" data-wow-duration="1.5s"
+                                data-wow-delay="0.5s">
+                                <h3 class="text-purple font-k-l py-2 ">CEO Message</h3>
                                 <p class=" position-relative text-justify text-dark"><i
                                         class="fa-solid fa-quote-left fs-2 text-purple"></i>
 
@@ -614,12 +651,16 @@
                 <section class="blog_section py-5 mt-5">
                     <div class="container">
                         <div class=" text-center">
-                            <h2 class="text-dark font-k-l">Latest <span class="font-k-b">Blogs</span></h2>
+                            <h2 class="text-dark font-k-l wow animate__animated animate__fadeInDown"
+                                data-wow-duration="1.5s" data-wow-delay="0.5s">Latest <span
+                                    class="font-k-b">Blogs</span></h2>
                         </div>
                         <div class="row justify-content-center align-items-center pt-3 mt-2 g-4">
-                            <div class="col-lg-4">
-                                <div class="card px-0 mx-2 py-4">
-                                    <div class="position-relative">
+                            <div class="col-lg-4 wow animate__animated animate__bounceIn" data-wow-duration="1.5s"
+                                data-wow-delay="0.5s">
+                                <div class="card px-0 mx-2 py-4 wow animate__animated animate__bounceIn"
+                                    data-wow-duration="1.5s" data-wow-delay="0.5s">
+                                    <div class="position-relative ">
                                         <img src="{{ asset('assets/img/blog-image-1.jpg') }}" alt="Card image"
                                             class="card-img-top px-4">
                                     </div>
@@ -632,8 +673,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
-                                <div class="card px-0 mx-2 py-4">
+                            <div class="col-lg-4 ">
+                                <div class="card px-0 mx-2 py-4 wow animate__animated animate__bounceIn"
+                                    data-wow-duration="1.5s" data-wow-delay="0.5s">
                                     <div class="position-relative">
                                         <img src="{{ asset('assets/img/blog-image-2.jpg') }}" alt="Card image"
                                             class="card-img-top px-4">
@@ -649,7 +691,8 @@
                                 </div>
                             </div>
                             <div class="col-lg-4">
-                                <div class="card px-0 mx-2 py-4">
+                                <div class="card px-0 mx-2 py-4 wow animate__animated animate__bounceIn"
+                                    data-wow-duration="1.5s" data-wow-delay="0.5s">
                                     <div class="position-relative">
                                         <img src="{{ asset('assets/img/blog-image-3.jpg') }}" alt="Card image"
                                             class="card-img-top px-4">
@@ -666,13 +709,15 @@
                         </div>
                     </div>
                 </section>
-                <section class="team_section py-5">
+                <section class="team_section pt-3">
                     <div class="container-fluid">
                         <div class=" text-center">
-                            <h2 class="text-dark font-k-l">Our <span class="font-k-b">Team</span></h2>
+                            <h2 class="text-dark font-k-l wow animate__animated animate__fadeInDown"
+                                data-wow-duration="1.5s" data-wow-delay="0.5s">Our <span class="font-k-b">Team</span>
+                            </h2>
                         </div>
                         <div class="row mt-5 pt-5">
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-4">
                                 <div class="team_container position-relative">
                                     <img src="{{ asset('assets/img/team-member-5.png') }}" class="img-fluid"
                                         alt="partner">
@@ -698,7 +743,7 @@
 
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-4">
                                 <div class="team_container position-relative">
                                     <img src="{{ asset('assets/img/team-member-2.png') }}" class="img-fluid"
                                         alt="partner">
@@ -723,7 +768,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-4">
                                 <div class="team_container position-relative">
                                     <img src="{{ asset('assets/img/team-member-4.png') }}" class="img-fluid"
                                         alt="partner">
@@ -757,7 +802,8 @@
                 <section class="faq_section faq_bg py-5">
                     <div class="accordion__wrapper customContainer py-5">
                         <!-- Accordion Item -->
-                        <div class="accordion">
+                        <div class="accordion wow animate__animated animate__bounceIn" data-wow-duration="1.5s"
+                            data-wow-delay="0.5s">
                             <div class="accordion__header">
                                 <h2 class="accordion__question fs-6">What services does Riz Technology offer?</h2>
                                 <span class="accordion__icon">
@@ -778,7 +824,8 @@
                         </div>
 
                         <!-- Accordion Item -->
-                        <div class="accordion">
+                        <div class="accordion wow animate__animated animate__bounceIn" data-wow-duration="1.5s"
+                            data-wow-delay="0.5s">
                             <div class="accordion__header">
                                 <h2 class="accordion__question fs5">What types of toner cartridges do you offer?</h2>
                                 <span class="accordion__icon">
@@ -791,7 +838,8 @@
                                     options to cater to different printing needs and budgets.</p>
                             </div>
                         </div>
-                        <div class="accordion">
+                        <div class="accordion animate__animated animate__bounceIn" data-wow-duration="1.5s"
+                            data-wow-delay="0.5s">
                             <div class="accordion__header">
                                 <h2 class="accordion__question fs5">What kind of support do you provide after project
                                     completion??</h2>
@@ -806,7 +854,8 @@
                                     the long-term success of your IT solutions.</p>
                             </div>
                         </div>
-                        <div class="accordion">
+                        <div class="accordion animate__animated animate__bounceIn" data-wow-duration="1.5s"
+                            data-wow-delay="0.5s">
                             <div class="accordion__header">
                                 <h2 class="accordion__question fs5">Do you offer bulk ordering discounts for IT
                                     products?</h2>
@@ -820,7 +869,8 @@
                                     information on pricing and availability.</p>
                             </div>
                         </div>
-                        <div class="accordion">
+                        <div class="accordion animate__animated animate__bounceIn" data-wow-duration="1.5s"
+                            data-wow-delay="0.5s">
                             <div class="accordion__header">
                                 <h2 class="accordion__question fs5">What are the environmental considerations for data
                                     centers?</h2>
@@ -835,7 +885,8 @@
                                     vital role in the inauguration of the UBL Data Center.</p>
                             </div>
                         </div>
-                        <div class="accordion">
+                        <div class="accordion animate__animated animate__bounceIn" data-wow-duration="1.5s"
+                            data-wow-delay="0.5s">
                             <div class="accordion__header">
                                 <h2 class="accordion__question fs5">What is your approach to cybersecurity?</h2>
                                 <span class="accordion__icon">
@@ -848,7 +899,8 @@
                                     monitoring. We also provide employee training to help prevent cyber threats.</p>
                             </div>
                         </div>
-                        <div class="accordion">
+                        <div class="accordion animate__animated animate__bounceIn" data-wow-duration="1.5s"
+                            data-wow-delay="0.5s">
                             <div class="accordion__header">
                                 <h2 class="accordion__question fs5">Are your IT solutions scalable?
                                 </h2>
@@ -863,7 +915,8 @@
                                     grows without significant downtime or disruption.</p>
                             </div>
                         </div>
-                        <div class="accordion">
+                        <div class="accordion animate__animated animate__bounceIn" data-wow-duration="1.5s"
+                            data-wow-delay="0.5s">
                             <div class="accordion__header">
                                 <h2 class="accordion__question fs5">How do you handle project timelines?</h2>
                                 <span class="accordion__icon">
@@ -883,9 +936,11 @@
                     <div class="customContainer">
                         <div class="row">
                             <div class="col-lg-6">
-                                <div class="card bg-card rounded-4">
+                                <div class="card bg-card rounded-4 animate__animated animate__fadeInDown"
+                                    data-wow-duration="1.5s" data-wow-delay="0.5s">
                                     <div class="card-body">
-                                        <h4 class="text-white font-k-b">Get In Touch With Us</h4>
+                                        <h4 class="text-white font-k-b animate__animated animate__fadeInDown"
+                                            data-wow-duration="1.5s" data-wow-delay="0.5s">Get In Touch With Us</h4>
                                         <form action="https://riztechnology.com/contact" method="POST"
                                             class="row contact_form mt-4 text-white">
                                             <input type="hidden" name="_token"
@@ -958,7 +1013,8 @@
                                 </div>
                             </div>
                             <div class="col-lg-6 d-flex align-items-end mt-lg-0 mt-3">
-                                <div class="contactContent ">
+                                <div class="contactContent animate__animated animate__bounceIn"
+                                    data-wow-duration="1.5s" data-wow-delay="0.5s">
                                     <div class=" text-start">
                                         <h3 class="text-dark font-k-l">Get in touch with us <br> <span
                                                 class="font-k-b">for comprehensive IT
@@ -1338,20 +1394,29 @@
 
         </div>
     </div>
+    <!-- jQuery (if needed for slick or legacy stuff) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
-        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script src="./assets/js/jquery.min.js"></script>
-    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- Slick carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+    <!-- Bootstrap (only bundle, includes Popper) -->
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/js/popper.min.js"></script>
-    <script src="./assets/js/slick.min.js"></script>
+
+    <!-- GSAP and plugins -->
     <script src="./assets/js/gsap.min.js"></script>
     <script src="./assets/js/ScrollTrigger.min.js"></script>
     <script src="./assets/js/smooth.min.js"></script>
+
+    <!-- WOW.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <!-- Your custom JS -->
     <script src="./assets/js/script.js"></script>
+
     <script type="text/javascript">
         $('.slider').slick({
             dots: false, // default (desktop)
@@ -1403,64 +1468,63 @@
         });
 
         $('.why_section_slider').slick({
-            dots: false,
-            infinite: true,
-            arrows: false,
-            speed: 500,
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 2000,
-            responsive: [{
-                    breakpoint: 1366, // iPad Pro landscape max width
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1,
-                        dots: true,
-                        arrows: false
-                    }
-                },
-                {
-                    breakpoint: 1024, // iPad Pro portrait / tablets
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1,
-                        dots: true,
-                        arrows: false
-                    }
-                },
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1,
-                        dots: true,
-                        arrows: false
-                    }
-                },
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1,
-                        dots: true,
-                        arrows: false
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1,
-                        dots: true,
-                        arrows: false
-                    }
-                }
-                // You can unslick at a given breakpoint now by adding:
-                // settings: "unslick"
-                // instead of a settings object
-            ]
-        });
+    dots: false,
+    infinite: true,
+    arrows: false,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+        {
+            breakpoint: 1366,
+            settings: {
+                slidesToShow: 1, // changed from 2 to 1
+                slidesToScroll: 1,
+                dots: true,
+                arrows: false
+            }
+        },
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 1, // changed from 2 to 1
+                slidesToScroll: 1,
+                dots: true,
+                arrows: false
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1, // changed from 2 to 1
+                slidesToScroll: 1,
+                dots: true,
+                arrows: false
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true,
+                arrows: false
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true,
+                arrows: false
+            }
+        }
+    ]
+});
+
         $('.process_slider').slick({
             dots: false,
             infinite: true,
@@ -1557,7 +1621,6 @@
             $(window).on('resize', updatePositions);
         });
     </script>
-
 </body>
 
 </html>
